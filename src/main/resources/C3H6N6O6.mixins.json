@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.korostudio.c3h6n6o6.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "FastUtilsMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "plugin": "cn.korostudio.c3h6n6o6.mixin.SynchronisePlugin"
+}

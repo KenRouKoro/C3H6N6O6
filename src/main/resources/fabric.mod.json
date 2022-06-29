@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "c3h6n6o6",
+  "version": "${version}",
+  "name": "C3H6N6O6",
+  "description": "环三亚甲基三硝胺（C3H6N6O6），生物多线程优化模组",
+  "authors": [
+    "KenRouKoro"
+  ],
+  "contact": {
+    "website": "https://korostudio.cn"
+  },
+  "license": "MIT",
+  "icon": "assets/C3H6N6O6/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.korostudio.c3h6n6o6.client.C3H6N6O6Client"
+    ],
+    "main": [
+      "cn.korostudio.c3h6n6o6.C3H6N6O6"
+    ]
+  },
+  "mixins": [
+    "C3H6N6O6.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
