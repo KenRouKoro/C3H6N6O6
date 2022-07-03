@@ -3,7 +3,12 @@
 ![Logo](logo.png)
 
 ps:你可以叫它黑索金 | You can call it Cyclonite.
+****
 
+**警告：请勿在客户端使用该模组，我不能保证它完全在客户端不工作（C3H6N6O6并没有尝试去更改Minecraft客户端工作顺序）**
+
+**Warning: Do not use this module on the client side, I cannot guarantee that it will not work completely on the client side (C3H6N6O6 does not try to change the order in which the Minecraft client works)**
+****
 这是一个用于实体多线程运算的模组，适用于Minecraft1.18.2 Fabric。
 它与大多数模组兼容，与锂兼容需要关闭锂的entity和collections
 

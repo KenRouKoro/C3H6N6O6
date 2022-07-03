@@ -17,7 +17,7 @@
     "preLaunch": [
       "cn.korostudio.c3h6n6o6.fastutil.sync.SyncFuTransformer"
     ],
-    "main": [
+    "server": [
       "cn.korostudio.c3h6n6o6.C3H6N6O6"
     ]
   },
