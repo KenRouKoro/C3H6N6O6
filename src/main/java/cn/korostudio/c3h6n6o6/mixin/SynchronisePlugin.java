@@ -17,14 +17,12 @@ import java.util.TreeSet;
 
 public class SynchronisePlugin implements IMixinConfigPlugin {
     private static final Logger syncLogger = LogManager.getLogger();
-    private final TreeSet<String> syncAllSet = new TreeSet();
+    private final TreeSet<String> syncAllSet = new TreeSet<>();
 
     @Override
     public void onLoad(String mixinPackage) {
-        syncAllSet.add("cn.korostudio.c3h6n6o6.FastUtilsMixin");
-
+        syncAllSet.add("cn.korostudio.c3h6n6o6.mixin.FastUtilsMixin");
     }
-
     @Override
     public String getRefMapperConfig() {
         return null;
@@ -60,11 +58,10 @@ public class SynchronisePlugin implements IMixinConfigPlugin {
                         && (method.access & negFilter) == 0
                         && !method.name.equals("<init>")) {
                     method.access |= Opcodes.ACC_SYNCHRONIZED;
-                    syncLogger.info("Setting synchronize bit for " + method.name + " in " + targetClassName + ".");
+                    syncLogger.info("正在为类"+ targetClassName+ "的" +method.name + "()方法设置同步关键字");
                 }
             }
 
         }
-
     }
 }

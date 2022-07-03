@@ -1,8 +1,8 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentCollections;
+import cn.korostudio.c3h6n6o6.fastutil.Int2ObjectConcurrentHashMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.himeki.mcmtfabric.parallelised.ConcurrentCollections;
-import net.himeki.mcmtfabric.parallelised.fastutil.Int2ObjectConcurrentHashMap;
 import net.minecraft.world.entity.EntityIndex;
 import net.minecraft.world.entity.EntityLike;
 import org.spongepowered.asm.mixin.Final;

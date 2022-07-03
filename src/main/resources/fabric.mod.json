@@ -11,21 +11,22 @@
     "website": "https://korostudio.cn"
   },
   "license": "MIT",
-  "icon": "assets/C3H6N6O6/icon.png",
+  "icon": "assets/c3h6n6o6/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "cn.korostudio.c3h6n6o6.client.C3H6N6O6Client"
+    "preLaunch": [
+      "cn.korostudio.c3h6n6o6.fastutil.sync.SyncFuTransformer"
     ],
     "main": [
       "cn.korostudio.c3h6n6o6.C3H6N6O6"
     ]
   },
+  "accessWidener": "c3h6n6o6.accesswidener",
   "mixins": [
     "C3H6N6O6.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.8",
+    "fabricloader": ">=0.14.6",
     "fabric": "*",
     "minecraft": "1.18.2"
   }

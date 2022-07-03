@@ -1,9 +1,9 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
+import cn.korostudio.c3h6n6o6.fastutil.Long2ByteConcurrentHashMap;
+import cn.korostudio.c3h6n6o6.fastutil.Long2ObjectOpenConcurrentHashMap;
 import it.unimi.dsi.fastutil.longs.Long2ByteMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
-import net.himeki.mcmtfabric.parallelised.fastutil.Long2ByteConcurrentHashMap;
-import net.himeki.mcmtfabric.parallelised.fastutil.Long2ObjectOpenConcurrentHashMap;
 import net.minecraft.server.world.ChunkTicket;
 import net.minecraft.util.collection.SortedArraySet;
 import net.minecraft.world.ChunkPosDistanceLevelPropagator;

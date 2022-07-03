@@ -1,6 +1,6 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
-import net.himeki.mcmtfabric.parallelised.ConcurrentCollections;
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentCollections;
 import net.minecraft.util.collection.TypeFilterableList;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,6 +27,7 @@ public abstract class TypeFilterableListMixin<T> extends AbstractCollection<T> {
     @Final
     @Mutable
     private List<T> allElements = new CopyOnWriteArrayList<>();
+
 
     @ModifyArg(method = "method_15217", at = @At(value = "INVOKE", target = "Ljava/util/stream/Stream;collect(Ljava/util/stream/Collector;)Ljava/lang/Object;"))
     private <T> Collector<T, ?, List<T>> overwriteCollectToList(Collector<T, ?, List<T>> collector) {

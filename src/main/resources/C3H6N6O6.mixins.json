@@ -4,7 +4,24 @@
   "package": "cn.korostudio.c3h6n6o6.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "FastUtilsMixin"
+    "ChunkHolderMixin",
+    "ChunkTicketManagerMixin",
+    "EntityIndexMixin",
+    "EntityListMixin",
+    "FastUtilsMixin",
+    "LevelPropagatorMixin",
+    "LockHelperMixin",
+    "MinecraftServerMixin",
+    "RegistryMixin",
+    "SectionedEntityCacheMixin",
+    "SerializingRegionBasedStorageMixin",
+    "ServerChunkManagerMixin",
+    "ServerWorldMixin",
+    "SharedConstantsMixin",
+    "SimulationDistanceLevelPropagatorMixin",
+    "TypeFilterableListMixin",
+    "WorldMixin",
+    "WorldTickSchedulerMixin"
   ],
   "client": [
   ],

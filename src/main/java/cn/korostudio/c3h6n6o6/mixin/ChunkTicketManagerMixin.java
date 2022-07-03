@@ -1,8 +1,8 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentCollections;
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentLongLinkedOpenHashSet;
 import it.unimi.dsi.fastutil.longs.LongSet;
-import net.himeki.mcmtfabric.parallelised.ConcurrentCollections;
-import net.himeki.mcmtfabric.parallelised.fastutil.ConcurrentLongLinkedOpenHashSet;
 import net.minecraft.server.world.ChunkHolder;
 import net.minecraft.server.world.ChunkTicketManager;
 import org.spongepowered.asm.mixin.Final;
@@ -18,10 +18,10 @@ public abstract class ChunkTicketManagerMixin {
     @Shadow
     @Final
     @Mutable
-    private Set<ChunkHolder> chunkHolders = ConcurrentCollections.newHashSet();
+    Set<ChunkHolder> chunkHolders = ConcurrentCollections.newHashSet();
 
     @Shadow
     @Final
     @Mutable
-    private LongSet chunkPositions = new ConcurrentLongLinkedOpenHashSet();
+    LongSet chunkPositions = new ConcurrentLongLinkedOpenHashSet();
 }

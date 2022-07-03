@@ -1,8 +1,13 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentCollections;
+import cn.korostudio.c3h6n6o6.fastutil.Long2LongConcurrentHashMap;
 import cn.korostudio.c3h6n6o6.fastutil.Long2ObjectOpenConcurrentHashMap;
 import com.google.common.collect.Queues;
+import it.unimi.dsi.fastutil.longs.Long2LongMap;
+import it.unimi.dsi.fastutil.longs.Long2LongOpenHashMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
+import net.minecraft.util.Util;
 import net.minecraft.world.tick.ChunkTickScheduler;
 import net.minecraft.world.tick.OrderedTick;
 import net.minecraft.world.tick.QueryableTickScheduler;
@@ -23,11 +28,6 @@ public abstract class WorldTickSchedulerMixin<T> implements QueryableTickSchedul
     @Mutable
     private Long2ObjectMap<ChunkTickScheduler<T>> chunkTickSchedulers = new Long2ObjectOpenConcurrentHashMap<>();
 
-//    @Shadow
-//    @Final
-//    private final Long2LongMap nextTriggerTickByChunkPos = new Long2LongConcurrentHashMap(9223372036854775807L);
-
-    private Queues ConcurrentCollections;
     @Shadow
     @Final
     @Mutable
@@ -37,6 +37,10 @@ public abstract class WorldTickSchedulerMixin<T> implements QueryableTickSchedul
     @Final
     @Mutable
     private Queue<OrderedTick<T>> tickableTicks = ConcurrentCollections.newArrayDeque();
+    @Shadow
+    @Final
+    @Mutable
+    private  Long2LongMap nextTriggerTickByChunkPos = new Long2LongConcurrentHashMap(Long.MAX_VALUE);//Util.make(new Long2LongConcurrentHashMap(Long.MAX_VALUE), map -> map.defaultReturnValue(Long.MAX_VALUE));;
 
     @Shadow
     @Final

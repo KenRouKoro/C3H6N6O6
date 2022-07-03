@@ -65,6 +65,10 @@ jar {
     }
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/c3h6n6o6.accesswidener")
+}
+
 // configure the maven publication
 publishing {
     publications {

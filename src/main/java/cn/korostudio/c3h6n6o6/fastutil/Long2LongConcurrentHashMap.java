@@ -44,7 +44,11 @@ public class Long2LongConcurrentHashMap implements Long2LongMap {
 
     @Override
     public long remove(final long key) {
-        return backing.remove(key);
+        try {
+            return backing.remove(key);
+        }catch (NullPointerException e){
+            return 0;
+        }
     }
 
     @Override

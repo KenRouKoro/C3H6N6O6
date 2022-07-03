@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Registry.class)
 public abstract class RegistryMixin <T> implements IndexedIterable<T> {
+    /*
     @Inject(method = "register(Lnet/minecraft/util/registry/Registry;Lnet/minecraft/util/registry/RegistryKey;Ljava/lang/Object;)Ljava/lang/Object;",
         at = @At("HEAD"),cancellable = true
     )
@@ -28,4 +29,6 @@ public abstract class RegistryMixin <T> implements IndexedIterable<T> {
             cir.setReturnValue(entry);
         }
     }
+    */
+
 }

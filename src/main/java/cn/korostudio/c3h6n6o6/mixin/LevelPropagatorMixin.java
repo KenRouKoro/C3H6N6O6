@@ -1,7 +1,7 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentLongLinkedOpenHashSet;
 import it.unimi.dsi.fastutil.longs.LongLinkedOpenHashSet;
-import net.himeki.mcmtfabric.parallelised.fastutil.ConcurrentLongLinkedOpenHashSet;
 import net.minecraft.world.chunk.light.LevelPropagator;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

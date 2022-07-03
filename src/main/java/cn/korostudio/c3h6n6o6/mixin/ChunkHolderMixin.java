@@ -1,7 +1,7 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
+import cn.korostudio.c3h6n6o6.fastutil.ConcurrentShortHashSet;
 import it.unimi.dsi.fastutil.shorts.ShortSet;
-import net.himeki.mcmtfabric.parallelised.fastutil.ConcurrentShortHashSet;
 import net.minecraft.server.world.ChunkHolder;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.HeightLimitView;
