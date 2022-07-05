@@ -42,6 +42,7 @@ public abstract class MinecraftServerMixin extends ReentrantThreadExecutor<Serve
         return true;
     }
 
+    /*
     @Inject(method = "tickWorlds", at = @At(value = "INVOKE", target = "Ljava/lang/Iterable;iterator()Ljava/util/Iterator;"))
     private void preTick(BooleanSupplier shouldKeepTicking, CallbackInfo ci) {
         CalculationController.startTick((MinecraftServer) (Object) this);
@@ -51,6 +52,8 @@ public abstract class MinecraftServerMixin extends ReentrantThreadExecutor<Serve
     private void postTick(BooleanSupplier shouldKeepTicking, CallbackInfo ci) {
         CalculationController.endTick((MinecraftServer) (Object) this);
     }
+
+     */
 
     @Redirect(method = "prepareStartRegion", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/world/ServerChunkManager;getTotalChunksLoadedCount()I"))
     private int initialChunkCountBypass(ServerChunkManager instance) {

@@ -5,3 +5,4 @@ accessible  field net/minecraft/server/world/ThreadedAnvilChunkStorage structure
 accessible  method net/minecraft/server/world/ServerWorld processBlockEvent (Lnet/minecraft/server/world/BlockEvent;)Z
 accessible method net/minecraft/server/world/ServerChunkManager getChunkHolder (J)Lnet/minecraft/server/world/ChunkHolder;
 accessible  method net/minecraft/server/world/ServerChunkManager$MainThreadExecutor runTask ()Z
+accessible  class net/minecraft/network/NetworkState$PacketHandler

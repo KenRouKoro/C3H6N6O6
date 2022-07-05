@@ -27,12 +27,15 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Collection;
 import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.Executor;
+import java.util.function.BooleanSupplier;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -50,6 +53,7 @@ public abstract class ServerWorldMixin extends World implements StructureWorldAc
     @Mutable
     Set<MobEntity> loadedMobs = ConcurrentCollections.newHashSet();
 
+
     @Shadow
     @Final
     @Mutable
@@ -57,6 +61,15 @@ public abstract class ServerWorldMixin extends World implements StructureWorldAc
     @Redirect(method = "tickEntity", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/Entity;tick()V"))
     private void overwriteEntityTicking(Entity entity) {
         CalculationController.callEntityTick(entity, (ServerWorld) (Object) this);
+    }
+
+    @Inject(method = "tick",at = @At(value = "INVOKE",target = "Lnet/minecraft/world/EntityList;forEach(Ljava/util/function/Consumer;)V"))
+    private void tickStart(BooleanSupplier shouldKeepTicking, CallbackInfo ci){
+       CalculationController.startTick(((ServerWorld)(Object)this).getServer());
+    }
+    @Inject(method = "tick",at = @At(value = "INVOKE",target = "Lnet/minecraft/server/world/ServerWorld;tickBlockEntities()V", shift = At.Shift.AFTER))
+    private void tickEnd(BooleanSupplier shouldKeepTicking, CallbackInfo ci){
+        CalculationController.endTick(((ServerWorld)(Object)this).getServer());
     }
 
 }
