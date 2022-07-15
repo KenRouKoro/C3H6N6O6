@@ -16,8 +16,10 @@ public class C3H6N6O6 implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        log.info("C3H6N6O6 Is Loading!");
-
+        log.info("C3H6N6O6 is loading!");
+        Setting.autoLoad(true);
+        log.info("C3H6N6O6 is being initialised.");
         CalculationController.Init();
+        log.info("Initialisation of C3H6N6O6 is complete.");
     }
 }

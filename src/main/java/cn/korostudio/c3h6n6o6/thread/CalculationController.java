@@ -5,7 +5,11 @@ import cn.korostudio.c3h6n6o6.C3H6N6O6;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.Inventory;
+import net.minecraft.network.packet.s2c.play.BlockEventS2CPacket;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.world.BlockEvent;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.BlockEntityTickInvoker;
@@ -20,11 +24,17 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static cn.korostudio.c3h6n6o6.C3H6N6O6.Setting;
+
+/**
+ * 核心控制器
+ */
 @Slf4j
 public class CalculationController {
     protected static ExecutorService executor ;
     @Getter
     protected static AtomicBoolean Ticking = new AtomicBoolean();
+    @Getter
+    protected static AtomicBoolean Client = new AtomicBoolean(false);
     protected static AtomicInteger ThreadID = null;
     @Getter
     protected static Phaser phaser;
@@ -48,27 +58,41 @@ public class CalculationController {
         }, true);
     }
     public static void startTick(MinecraftServer server) {
+
         if (phaser != null) {
-            log.warn("多个服务器?什么鬼！");
-        } else {
-            tickStart = System.nanoTime();
-            Ticking.set(true);
-            phaser = new Phaser();
-            phaser.register();
+            log.warn("多次TickStart?什么鬼！");
+            log.info("Server 参数状态:"+server);
+            return;
+        }else if(! Client.get()){
             CalculationController.server = server;
         }
+        tickStart = System.nanoTime();
+        Ticking.set(true);
+        phaser = new Phaser();
+        phaser.register();
     }
     public static void endTick(MinecraftServer server) {
-        if (CalculationController.server != server) {
-            log.warn("多个服务器?什么鬼！");
-        } else {
+        if ((Client.get())||(CalculationController.server == server)){
             phaser.arriveAndAwaitAdvance();
             Ticking.set(false);
             phaser = null;
+        } else {
+            log.warn("多个服务器?什么鬼！");
         }
     }
-    public static void callEntityTick(Entity entityIn, ServerWorld serverworld) {
-        if (Setting.getBool("disabled",false)){
+    public static void callEntityTick(Entity entityIn) {
+        if (Setting.getBool("EntityDisabled",false)){
+            entityIn.tick();
+            return;
+        }
+
+        //检查是否为玩家类
+        if(entityIn instanceof PlayerEntity){
+            entityIn.tick();
+            return;
+        }
+        //判断是否处于tick中，不处于直接tick实体
+        if(!Ticking.get()){
             entityIn.tick();
             return;
         }
@@ -97,8 +121,18 @@ public class CalculationController {
             }
         });
     }
-    public static void callBlockEntityTick(BlockEntityTickInvoker tte, World world) {
-        if (Setting.getBool("disabled",false)) {
+    public static void callBlockEntityTick(BlockEntityTickInvoker tte) {
+        if (Setting.getBool("BlockEntityDisabled",false)) {
+            tte.tick();
+            return;
+        }
+        //检查是否为容器类
+        if(tte instanceof Inventory){
+            tte.tick();
+            return;
+        }
+        //判断是否处于tick中，不处于直接tick方块实体
+        if(!Ticking.get()){
             tte.tick();
             return;
         }
@@ -114,5 +148,16 @@ public class CalculationController {
                 phaser.arriveAndDeregister();
             }
         });
+    }
+
+    public static void sendQueuedBlockEvents(Deque<BlockEvent> d, ServerWorld sw) {
+        Iterator<BlockEvent> bed = d.iterator();
+        while (bed.hasNext()) {
+            BlockEvent BlockEvent = bed.next();
+            if (sw.processBlockEvent(BlockEvent)) {
+                sw.getServer().getPlayerManager().sendToAround(null, BlockEvent.pos().getX(), BlockEvent.pos().getY(), BlockEvent.pos().getZ(), 64.0D, sw.getRegistryKey(), new BlockEventS2CPacket(BlockEvent.pos(), BlockEvent.block(), BlockEvent.type(), BlockEvent.data()));
+            }
+            bed.remove();
+        }
     }
 }

@@ -2,6 +2,7 @@ package cn.korostudio.c3h6n6o6.mixin;
 
 import cn.hutool.core.thread.ThreadUtil;
 import cn.korostudio.c3h6n6o6.C3H6N6O6;
+import cn.korostudio.c3h6n6o6.thread.CalculationController;
 import com.mojang.datafixers.DataFixer;
 import com.mojang.datafixers.util.Either;
 import net.minecraft.server.WorldGenerationProgressListener;
@@ -76,9 +77,10 @@ public abstract class ServerChunkManagerMixin extends ChunkManager {
     private Thread overwriteServerThread(ServerChunkManager mgr) {
         return Thread.currentThread();
     }
-
+    //TODO: 彻底修复线程读取问题，现在只是临时解决方案
     @Inject(method = "getChunk(IILnet/minecraft/world/chunk/ChunkStatus;Z)Lnet/minecraft/world/chunk/Chunk;",at = @At("HEAD"),cancellable = true)
     private void fixThread(int x, int z, ChunkStatus leastStatus, boolean create, CallbackInfoReturnable<Chunk> cir){
+        //serverThread = CalculationController.getServer().getThread();
         if (Thread.currentThread().getName().startsWith("C3H6N6O6")) {
             Chunk chunk2;
             Profiler profiler = this.world.getProfiler();

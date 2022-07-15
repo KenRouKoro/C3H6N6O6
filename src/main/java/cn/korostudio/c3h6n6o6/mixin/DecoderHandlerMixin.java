@@ -1,12 +1,9 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
-import com.mojang.logging.LogUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.ByteToMessageDecoder;
 import net.minecraft.network.*;
-import net.minecraft.util.profiling.jfr.FlightProfiler;
-import org.objectweb.asm.Opcodes;
+import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,12 +12,12 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.io.IOException;
 import java.util.List;
 
-@Mixin(DecoderHandler.class)
-public class DecoderHandlerMixin extends ByteToMessageDecoder {
+@Mixin(value = DecoderHandler.class ,priority = 10)
+public class DecoderHandlerMixin  {
     @Final
     @Mutable
     @Shadow
@@ -29,6 +26,23 @@ public class DecoderHandlerMixin extends ByteToMessageDecoder {
     @Mutable
     @Shadow
     private  NetworkSide side;
+
+    @Redirect(method = "decode",at = @At(value = "INVOKE",target = "Lnet/minecraft/network/NetworkState;getPacketHandler(Lnet/minecraft/network/NetworkSide;ILnet/minecraft/network/PacketByteBuf;)Lnet/minecraft/network/Packet;"))
+    private @Nullable Packet<?> fixError(NetworkState instance, NetworkSide side, int packetId, PacketByteBuf buf){
+        try {
+            return instance.getPacketHandler(side, packetId, buf);
+        } catch (IndexOutOfBoundsException e) {
+            return null;
+        }
+    }
+    @Inject(method = "decode",at = @At(value = "INVOKE",target = "Ljava/io/IOException;<init>(Ljava/lang/String;)V"),cancellable = true)
+    private void protectPacket(ChannelHandlerContext ctx, ByteBuf buf, List<Object> objects, CallbackInfo ci){
+        LOGGER.warn("decode故障，黑索金已拦截该报错。");
+        ci.cancel();
+    }
+
+
+    /*
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf buf, List<Object> objects) throws Exception {
         int i = buf.readableBytes();
@@ -56,4 +70,5 @@ public class DecoderHandlerMixin extends ByteToMessageDecoder {
             LOGGER.debug(ClientConnection.PACKET_RECEIVED_MARKER, " IN: [{}:{}] {}", new Object[]{ctx.channel().attr(ClientConnection.PROTOCOL_ATTRIBUTE_KEY).get(), j, packet.getClass().getName()});
         }
     }
+     */
 }

@@ -19,6 +19,7 @@ import net.minecraft.world.MutableWorldProperties;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkStatusChangeListener;
+import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.level.storage.LevelStorage;
 import org.objectweb.asm.Opcodes;
@@ -40,13 +41,8 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 @Mixin(ServerWorld.class)
-public abstract class ServerWorldMixin extends World implements StructureWorldAccess {
+public abstract class ServerWorldMixin extends World {
 
-    protected ServerWorldMixin(MutableWorldProperties properties, RegistryKey<World> registryRef, RegistryEntry dimensionType, Supplier<Profiler> profiler, boolean isClient, boolean debugWorld, long seed) {
-        super(properties, registryRef, dimensionType, profiler, isClient, debugWorld, seed);
-    }
-
-    ConcurrentLinkedDeque<BlockEvent> syncedBlockEventCLinkedQueue = new ConcurrentLinkedDeque<BlockEvent>();
 
     @Shadow
     @Final
@@ -58,9 +54,16 @@ public abstract class ServerWorldMixin extends World implements StructureWorldAc
     @Final
     @Mutable
     private  ObjectLinkedOpenHashSet<BlockEvent> syncedBlockEventQueue = new ObjectLinkedOpenHashSet<>();
+
+    ConcurrentLinkedDeque<BlockEvent> syncedBlockEventCLinkedQueue = new ConcurrentLinkedDeque<BlockEvent>();
+
+    protected ServerWorldMixin(MutableWorldProperties properties, RegistryKey<World> registryRef, RegistryEntry<DimensionType> registryEntry, Supplier<Profiler> profiler, boolean isClient, boolean debugWorld, long seed) {
+        super(properties, registryRef, registryEntry, profiler, isClient, debugWorld, seed);
+    }
+
     @Redirect(method = "tickEntity", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/Entity;tick()V"))
     private void overwriteEntityTicking(Entity entity) {
-        CalculationController.callEntityTick(entity, (ServerWorld) (Object) this);
+        CalculationController.callEntityTick(entity);
     }
 
     @Inject(method = "tick",at = @At(value = "INVOKE",target = "Lnet/minecraft/world/EntityList;forEach(Ljava/util/function/Consumer;)V"))
@@ -71,5 +74,33 @@ public abstract class ServerWorldMixin extends World implements StructureWorldAc
     private void tickEnd(BooleanSupplier shouldKeepTicking, CallbackInfo ci){
         CalculationController.endTick(((ServerWorld)(Object)this).getServer());
     }
+
+    @Redirect(method = "processSyncedBlockEvents", at = @At(value = "INVOKE", target = "Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;addAll(Ljava/util/Collection;)Z"))
+    private boolean overwriteQueueAddAll(ObjectLinkedOpenHashSet<BlockEvent> instance, Collection<? extends BlockEvent> c) {
+        return syncedBlockEventCLinkedQueue.addAll(c);
+    }
+
+    @Redirect(method = "addSyncedBlockEvent", at = @At(value = "INVOKE", target = "Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;add(Ljava/lang/Object;)Z"))
+    private boolean overwriteQueueAdd(ObjectLinkedOpenHashSet<BlockEvent> objectLinkedOpenHashSet, Object object) {
+        return syncedBlockEventCLinkedQueue.add((BlockEvent) object);
+    }
+
+    @Redirect(method = "clearUpdatesInArea", at = @At(value = "INVOKE", target = "Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;removeIf(Ljava/util/function/Predicate;)Z"))
+    private boolean overwriteQueueRemoveIf(ObjectLinkedOpenHashSet<BlockEvent> objectLinkedOpenHashSet, Predicate<BlockEvent> filter) {
+        return syncedBlockEventCLinkedQueue.removeIf(filter);
+    }
+
+    @Redirect(method = "processSyncedBlockEvents", at = @At(value = "INVOKE", target = "Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;isEmpty()Z"))
+    private boolean overwriteEmptyCheck(ObjectLinkedOpenHashSet<BlockEvent> objectLinkedOpenHashSet) {
+        return syncedBlockEventCLinkedQueue.isEmpty();
+    }
+
+    @Redirect(method = "processSyncedBlockEvents", at = @At(value = "INVOKE", target = "Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;removeFirst()Ljava/lang/Object;"))
+    private Object overwriteQueueRemoveFirst(ObjectLinkedOpenHashSet<BlockEvent> objectLinkedOpenHashSet) {
+        BlockEvent blockEvent = syncedBlockEventCLinkedQueue.removeFirst();
+        ServerUtil.sendQueuedBlockEvents(syncedBlockEventCLinkedQueue, (ServerWorld) (Object) this);
+        return blockEvent;
+    }
+
 
 }

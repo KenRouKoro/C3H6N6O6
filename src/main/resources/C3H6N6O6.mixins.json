@@ -9,13 +9,11 @@
     "DecoderHandlerMixin",
     "EntityIndexMixin",
     "EntityListMixin",
-    "FastUtilsMixin",
+    "SynchronicityFixer",
     "LevelPropagatorMixin",
     "LockHelperMixin",
     "MinecraftServerMixin",
-    "NearestLivingEntitiesSensorMixin",
     "PacketHandlerMixin",
-    "RegistryMixin",
     "SectionedEntityCacheMixin",
     "SerializingRegionBasedStorageMixin",
     "ServerChunkManagerMixin",
@@ -25,9 +23,11 @@
     "TypeFilterableListMixin",
     "WorldMixin",
     "WorldTickSchedulerMixin",
-    "fabric.SnapshotParticipantMixin"
-  ],
-  "client": [
+    "ae2.PlatformMixin",
+    "fabric.SnapshotParticipantMixin",
+    "tech.CableBlockEntityMixin",
+    "tech.CableTickManagerMixin",
+    "tech.SimpleSidedEnergyContainerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

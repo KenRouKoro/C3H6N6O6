@@ -21,7 +21,7 @@ public class SynchronisePlugin implements IMixinConfigPlugin {
 
     @Override
     public void onLoad(String mixinPackage) {
-        syncAllSet.add("cn.korostudio.c3h6n6o6.mixin.FastUtilsMixin");
+        syncAllSet.add("cn.korostudio.c3h6n6o6.mixin.SynchronicityFixer");
     }
     @Override
     public String getRefMapperConfig() {
