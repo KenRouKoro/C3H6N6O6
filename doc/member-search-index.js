@@ -1,0 +1,3290 @@
+memberSearchIndex = [{
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "acceptTargets(Set<String>, Set<String>)",
+    "u": "acceptTargets(java.util.Set,java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "add(byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "add(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "add(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "add(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "add(Long2ObjectMap.Entry<T>)",
+    "u": "add(it.unimi.dsi.fastutil.longs.Long2ObjectMap.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "add(short)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "add(T)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "add(V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "addAll(ByteCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.bytes.ByteCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "addAll(Collection<? extends Byte>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "addAll(Collection<? extends Integer>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "addAll(Collection<? extends Integer>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "addAll(Collection<? extends Long>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "addAll(Collection<? extends Long>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "addAll(Collection<? extends Long>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "addAll(Collection<? extends Long>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "addAll(Collection<? extends Long>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "addAll(Collection<? extends Long>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "addAll(Collection<? extends Long2ObjectMap.Entry<T>>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "addAll(Collection<? extends Short>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "addAll(Collection<? extends T>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "addAll(Collection<? extends V>)",
+    "u": "addAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "addAll(IntCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "addAll(IntCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "addAll(LongCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "addAll(LongCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "addAll(LongCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "addAll(LongCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "addAll(LongCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "addAll(LongCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "addAll(ShortCollection)",
+    "u": "addAll(it.unimi.dsi.fastutil.shorts.ShortCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "addAndMoveToFirst(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "addAndMoveToFirst(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "addAndMoveToLast(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "addAndMoveToLast(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "addTo(long, int)",
+    "u": "addTo(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "TypeFilterableListMixin",
+    "l": "allElements"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "SimpleSidedEnergyContainerMixin",
+    "l": "amount"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "back"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "back"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "back"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntIterator",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongIterator",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingShortIterator",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "backing"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableTickManagerMixin",
+    "l": "bfsQueue"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkHolderMixin",
+    "l": "blockUpdatesBySection"
+}, {
+    "p": "cn.korostudio.c3h6n6o6",
+    "c": "C3H6N6O6",
+    "l": "C3H6N6O6()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6",
+    "c": "C3H6N6O6Client",
+    "l": "C3H6N6O6Client()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "CableBlockEntityMixin(BlockEntityType<?>, BlockPos, BlockState)",
+    "u": "%3Cinit%3E(net.minecraft.block.entity.BlockEntityType,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableTickManagerMixin",
+    "l": "cableList"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableTickManagerMixin",
+    "l": "CableTickManagerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "CalculationController()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "callBlockEntityTick(BlockEntityTickInvoker)",
+    "u": "callBlockEntityTick(net.minecraft.world.chunk.BlockEntityTickInvoker)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "callEntityTick(Entity)",
+    "u": "callEntityTick(net.minecraft.entity.Entity)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "chunkCache"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkHolderMixin",
+    "l": "ChunkHolderMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkTicketManagerMixin",
+    "l": "chunkHolders"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "chunkPosCache"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkTicketManagerMixin",
+    "l": "chunkPositions"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "chunkStatusCache"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkTicketManagerMixin",
+    "l": "ChunkTicketManagerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldTickSchedulerMixin",
+    "l": "chunkTickSchedulers"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "clear()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "Client"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "clone()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "clone()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "clone()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "clone()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "comparator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "comparator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "comparator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "comparator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "comparator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "compute(long, BiFunction<? super Long, ? super Integer, ? extends Integer>)",
+    "u": "compute(long,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "compute(long, BiFunction<? super Long, ? super V, ? extends V>)",
+    "u": "compute(long,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "compute(Long, BiFunction<? super Long, ? super V, ? extends V>)",
+    "u": "compute(java.lang.Long,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "computeIfAbsent(long, LongFunction<? extends V>)",
+    "u": "computeIfAbsent(long,java.util.function.LongFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "computeIfAbsent(Long, LongFunction<? extends V>)",
+    "u": "computeIfAbsent(java.lang.Long,java.util.function.LongFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "computeIfAbsent(long, LongToIntFunction)",
+    "u": "computeIfAbsent(long,java.util.function.LongToIntFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "computeIfAbsentNullable(long, LongFunction<? extends Integer>)",
+    "u": "computeIfAbsentNullable(long,java.util.function.LongFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "computeIfAbsentPartial(long, Long2ObjectFunction<? extends V>)",
+    "u": "computeIfAbsentPartial(long,it.unimi.dsi.fastutil.longs.Long2ObjectFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "computeIfPresent(long, BiFunction<? super Long, ? super Integer, ? extends Integer>)",
+    "u": "computeIfPresent(long,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "computeIfPresent(long, BiFunction<? super Long, ? super V, ? extends V>)",
+    "u": "computeIfPresent(long,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "computeIfPresent(Long, BiFunction<? super Long, ? super V, ? extends V>)",
+    "u": "computeIfPresent(java.lang.Long,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "ConcurrentCollections()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(int)",
+    "u": "%3Cinit%3E(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(int, float)",
+    "u": "%3Cinit%3E(int,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(Iterator<?>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(Iterator<?>, float)",
+    "u": "%3Cinit%3E(java.util.Iterator,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(long[])",
+    "u": "%3Cinit%3E(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(long[], float)",
+    "u": "%3Cinit%3E(long[],float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(long[], int, int)",
+    "u": "%3Cinit%3E(long[],int,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(long[], int, int, float)",
+    "u": "%3Cinit%3E(long[],int,int,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(LongCollection)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(LongCollection, float)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongCollection,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(LongIterator)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongIterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "ConcurrentLongLinkedOpenHashSet(LongIterator, float)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongIterator,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "ConcurrentLongSortedSet()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "ConcurrentShortHashSet()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "contains(byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "contains(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "contains(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "contains(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "contains(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "contains(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "contains(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "contains(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "contains(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "contains(Object)",
+    "u": "contains(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "contains(Object)",
+    "u": "contains(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "contains(Object)",
+    "u": "contains(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "contains(short)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "containsAll(ByteCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.bytes.ByteCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "containsAll(Collection<?>)",
+    "u": "containsAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "containsAll(IntCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "containsAll(IntCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "containsAll(LongCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "containsAll(LongCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "containsAll(LongCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "containsAll(LongCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "containsAll(ShortCollection)",
+    "u": "containsAll(it.unimi.dsi.fastutil.shorts.ShortCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "containsKey(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "containsKey(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "containsKey(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "containsKey(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "containsKey(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "containsKey(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "containsKey(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "containsValue(byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "containsValue(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "containsValue(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "containsValue(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "containsValue(Object)",
+    "u": "containsValue(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "containsValue(Object)",
+    "u": "containsValue(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "containsValue(Object)",
+    "u": "containsValue(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "ConvertingObjectSet(Set<E>, Function<E, T>, Function<T, E>)",
+    "u": "%3Cinit%3E(java.util.Set,java.util.function.Function,java.util.function.Function)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "ConvertingObjectSetFast(Set<E>, Function<E, Long2ObjectMap.Entry<T>>, Function<Long2ObjectMap.Entry<T>, E>)",
+    "u": "%3Cinit%3E(java.util.Set,java.util.function.Function,java.util.function.Function)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "DamageTrackerMixin",
+    "l": "DamageTrackerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "DecoderHandlerMixin",
+    "l": "DecoderHandlerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "defaultReturn"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "defaultReturn"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "defaultReturn"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "defaultReturnValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "defaultReturnValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "defaultReturnValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "defaultReturnValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "defaultReturnValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "defaultReturnValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "defaultReturnValue(byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "defaultReturnValue(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "defaultReturnValue(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "defaultReturnValue(V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "defaultReturnValue(V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "defaultReturnValue(V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "defaultRV"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "defaultRV"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "duringListenerUpdate"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "TypeFilterableListMixin",
+    "l": "elementsByType"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "endTick(MinecraftServer)",
+    "u": "endTick(net.minecraft.server.MinecraftServer)"
+}, {"p": "cn.korostudio.c3h6n6o6.mixin", "c": "EntityListMixin", "l": "entities"}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "EntityIndexMixin",
+    "l": "EntityIndexMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "EntityListMixin",
+    "l": "EntityListMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "entrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "entrySetIntWrap(Map<Integer, T>)",
+    "u": "entrySetIntWrap(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "entrySetLongByteWrap(Map<Long, Byte>)",
+    "u": "entrySetLongByteWrap(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "entrySetLongLongWrap(Map<Long, Long>)",
+    "u": "entrySetLongLongWrap(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "entrySetLongWrap(Map<Long, T>)",
+    "u": "entrySetLongWrap(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "entrySetLongWrapFast(Map<Long, T>)",
+    "u": "entrySetLongWrapFast(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "executor"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "fastIterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "FastUtilHackUtil()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "firstLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "firstLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "firstLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "firstLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "firstLongKey()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "DecoderHandlerMixin",
+    "l": "fixError(NetworkState, NetworkSide, int, PacketByteBuf)",
+    "u": "fixError(net.minecraft.network.NetworkState,net.minecraft.network.NetworkSide,int,net.minecraft.network.PacketByteBuf)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "fixThread(int, int, ChunkStatus, boolean, CallbackInfoReturnable<Chunk>)",
+    "u": "fixThread(int,int,net.minecraft.world.chunk.ChunkStatus,boolean,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "forward"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "forward"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "get(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "get(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "get(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "get(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "get(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "get(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "get(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "get(Object)",
+    "u": "get(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "getAndMoveToFirst(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "getAndMoveToLast(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "getChunkFuture(int, int, ChunkStatus, boolean)",
+    "u": "getChunkFuture(int,int,net.minecraft.world.chunk.ChunkStatus,boolean)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.IntWrapperEntry",
+    "l": "getIntKey()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.Long2IntWrapperEntry",
+    "l": "getIntValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.IntWrapperEntry",
+    "l": "getKey()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.Long2IntWrapperEntry",
+    "l": "getLongKey()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "getMixins()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "getOrDefault(long, int)",
+    "u": "getOrDefault(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "getOrDefault(long, V)",
+    "u": "getOrDefault(long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "getOrDefault(Object, V)",
+    "u": "getOrDefault(java.lang.Object,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "getOverworld()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "getRefMapperConfig()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "getServerThread(CallbackInfo)",
+    "u": "getServerThread(org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "getThread()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.IntWrapperEntry",
+    "l": "getValue()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "hashCode()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "hashCode()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "hashCode()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "hashCode()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperIntEntryObjectIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperObjectIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingShortIterator",
+    "l": "hasNext()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "hasPrevious()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "hasPrevious()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "headMap(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "headSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "headSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "headSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "headSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "EntityIndexMixin",
+    "l": "idToEntity"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "Init()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "initialChunkCountBypass(ServerChunkManager)",
+    "u": "initialChunkCountBypass(net.minecraft.server.world.ServerChunkManager)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "PathMinHeapMixin",
+    "l": "injected(PathNode, CallbackInfoReturnable<PathNode>)",
+    "u": "injected(net.minecraft.entity.ai.pathing.PathNode,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "Int2ObjectConcurrentHashMap()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "int2ObjectEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "intEntryBackwards(Int2ObjectMap.Entry<T>)",
+    "u": "intEntryBackwards(it.unimi.dsi.fastutil.ints.Int2ObjectMap.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "intEntryForwards(Map.Entry<Integer, T>)",
+    "u": "intEntryForwards(java.util.Map.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "intMapItrFake(Map<Integer, T>)",
+    "u": "intMapItrFake(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.IntWrapperEntry",
+    "l": "IntWrapperEntry(Map.Entry<Integer, T>)",
+    "u": "%3Cinit%3E(java.util.Map.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SharedConstantsMixin",
+    "l": "isDevelopment"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "isEmpty()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "isOnThread()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.ae2",
+    "c": "PlatformMixin",
+    "l": "isServerEX(CallbackInfoReturnable<Boolean>)",
+    "u": "isServerEX(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "iterator()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "iterator(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "iterator(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "iterator(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "iterator(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrByteWrap(Iterable<Byte>)",
+    "u": "itrByteWrap(java.lang.Iterable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrByteWrap(Iterator<Byte>)",
+    "u": "itrByteWrap(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrIntWrap(Iterable<Integer>)",
+    "u": "itrIntWrap(java.lang.Iterable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrIntWrap(Iterator<Integer>)",
+    "u": "itrIntWrap(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrLongWrap(Iterable<Long>)",
+    "u": "itrLongWrap(java.lang.Iterable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrLongWrap(Iterator<Long>)",
+    "u": "itrLongWrap(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrShortWrap(Iterable<Short>)",
+    "u": "itrShortWrap(java.lang.Iterable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrShortWrap(Iterator<Short>)",
+    "u": "itrShortWrap(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrWrap(Iterable<T>)",
+    "u": "itrWrap(java.lang.Iterable)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "itrWrap(Iterator<T>)",
+    "u": "itrWrap(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "keySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "lastLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "lastLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "lastLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "lastLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "lastLongKey()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "LevelPropagatorMixin",
+    "l": "LevelPropagatorMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SimulationDistanceLevelPropagatorMixin",
+    "l": "levels"
+}, {"p": "cn.korostudio.c3h6n6o6.mixin", "c": "ServerWorldMixin", "l": "lock"}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "LockHelperMixin",
+    "l": "LockHelperMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "lockUpdateListeners(BlockPos, BlockState, BlockState, int, CallbackInfo)",
+    "u": "lockUpdateListeners(net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.BlockState,int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "LOGGER"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "DecoderHandlerMixin",
+    "l": "LOGGER"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "LOGGER"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "Long2ByteConcurrentHashMap()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "long2ByteEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "Long2IntConcurrentHashMap()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(int)",
+    "u": "%3Cinit%3E(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(int, float)",
+    "u": "%3Cinit%3E(int,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(long[], int[])",
+    "u": "%3Cinit%3E(long[],int[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(long[], int[], float)",
+    "u": "%3Cinit%3E(long[],int[],float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(Long2IntMap)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.Long2IntMap)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(Long2IntMap, float)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.Long2IntMap,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(Map<? extends Long, ? extends Integer>)",
+    "u": "%3Cinit%3E(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "Long2IntConcurrentNonLinkedOpenMap(Map<? extends Long, ? extends Integer>, float)",
+    "u": "%3Cinit%3E(java.util.Map,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "long2IntEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "long2IntEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.Long2IntWrapperEntry",
+    "l": "Long2IntWrapperEntry(Map.Entry<Long, Integer>)",
+    "u": "%3Cinit%3E(java.util.Map.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "Long2LongConcurrentHashMap(long)",
+    "u": "%3Cinit%3E(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "long2LongEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "Long2ObjectConcurrentHashMap()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "long2ObjectEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "long2ObjectEntrySet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "Long2ObjectOpenConcurrentHashMap()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "longByteEntryBackwards(Long2ByteMap.Entry)",
+    "u": "longByteEntryBackwards(it.unimi.dsi.fastutil.longs.Long2ByteMap.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "longByteEntryForwards(Map.Entry<Long, Byte>)",
+    "u": "longByteEntryForwards(java.util.Map.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "longEntryBackwards(Long2ObjectMap.Entry<T>)",
+    "u": "longEntryBackwards(it.unimi.dsi.fastutil.longs.Long2ObjectMap.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "longEntryForwards(Map.Entry<Long, T>)",
+    "u": "longEntryForwards(java.util.Map.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "longLongEntryBackwards(Long2LongMap.Entry)",
+    "u": "longLongEntryBackwards(it.unimi.dsi.fastutil.longs.Long2LongMap.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "longLongEntryForwards(Map.Entry<Long, Long>)",
+    "u": "longLongEntryForwards(java.util.Map.Entry)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "mainThreadExecutor"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "merge(long, int, BiFunction<? super Integer, ? super Integer, ? extends Integer>)",
+    "u": "merge(long,int,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "merge(long, V, BiFunction<? super V, ? super V, ? extends V>)",
+    "u": "merge(long,V,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "merge(Long, V, BiFunction<? super V, ? super V, ? extends V>)",
+    "u": "merge(java.lang.Long,V,java.util.function.BiFunction)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "MinecraftServerMixin(String)",
+    "u": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "newArrayDeque()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "newHashMap()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "newHashSet()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "newLinkedList()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperIntEntryObjectIterator",
+    "l": "next()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperObjectIterator",
+    "l": "next()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteIterator",
+    "l": "next()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntIterator",
+    "l": "next()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongIterator",
+    "l": "next()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingShortIterator",
+    "l": "next()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteIterator",
+    "l": "nextByte()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "nextIndex()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "nextIndex()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntIterator",
+    "l": "nextInt()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "nextLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongIterator",
+    "l": "nextLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "nextLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingShortIterator",
+    "l": "nextShort()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldTickSchedulerMixin",
+    "l": "nextTriggerTickByChunkPos"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "nullKey"
+}, {"p": "cn.korostudio.c3h6n6o6", "c": "C3H6N6O6", "l": "onInitialize()"}, {
+    "p": "cn.korostudio.c3h6n6o6",
+    "c": "C3H6N6O6Client",
+    "l": "onInitializeClient()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "onLoad(String)",
+    "u": "onLoad(java.lang.String)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncFuTransformer",
+    "l": "onPreLaunch()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "onServerExecutionThreadPatch(MinecraftServer)",
+    "u": "onServerExecutionThreadPatch(net.minecraft.server.MinecraftServer)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "TypeFilterableListMixin",
+    "l": "overwriteCollectToList(Collector<T, ?, List<T>>)",
+    "u": "overwriteCollectToList(java.util.stream.Collector)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldMixin",
+    "l": "overwriteCurrentThread()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "overwriteEmptyCheck(ObjectLinkedOpenHashSet<BlockEvent>)",
+    "u": "overwriteEmptyCheck(it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "overwriteEntityTicking(Entity)",
+    "u": "overwriteEntityTicking(net.minecraft.entity.Entity)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "LevelPropagatorMixin",
+    "l": "overwritePendingIdUpdatesByLevel(LongLinkedOpenHashSet[], int, LongLinkedOpenHashSet, int, int, int)",
+    "u": "overwritePendingIdUpdatesByLevel(it.unimi.dsi.fastutil.longs.LongLinkedOpenHashSet[],int,it.unimi.dsi.fastutil.longs.LongLinkedOpenHashSet,int,int,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "overwriteQueueAdd(ObjectLinkedOpenHashSet<BlockEvent>, Object)",
+    "u": "overwriteQueueAdd(it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet,java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "overwriteQueueAddAll(ObjectLinkedOpenHashSet<BlockEvent>, Collection<? extends BlockEvent>)",
+    "u": "overwriteQueueAddAll(it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet,java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "overwriteQueueRemoveFirst(ObjectLinkedOpenHashSet<BlockEvent>)",
+    "u": "overwriteQueueRemoveFirst(it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "overwriteQueueRemoveIf(ObjectLinkedOpenHashSet<BlockEvent>, Predicate<BlockEvent>)",
+    "u": "overwriteQueueRemoveIf(it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet,java.util.function.Predicate)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "overwriteServerThread(ServerChunkManager)",
+    "u": "overwriteServerThread(net.minecraft.server.world.ServerChunkManager)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkHolderMixin",
+    "l": "overwriteShortSet(ChunkPos, int, HeightLimitView, LightingProvider, ChunkHolder.LevelUpdateListener, ChunkHolder.PlayersWatchingChunkProvider, CallbackInfo)",
+    "u": "overwriteShortSet(net.minecraft.util.math.ChunkPos,int,net.minecraft.world.HeightLimitView,net.minecraft.world.chunk.light.LightingProvider,net.minecraft.server.world.ChunkHolder.LevelUpdateListener,net.minecraft.server.world.ChunkHolder.PlayersWatchingChunkProvider,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldMixin",
+    "l": "overwriteTick(BlockEntityTickInvoker)",
+    "u": "overwriteTick(net.minecraft.world.chunk.BlockEntityTickInvoker)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "PacketHandlerMixin",
+    "l": "packetFactories"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "PacketHandlerMixin",
+    "l": "PacketHandlerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.IntWrapperEntry",
+    "l": "parent"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.Long2IntWrapperEntry",
+    "l": "parent"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperIntEntryObjectIterator",
+    "l": "parent"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperObjectIterator",
+    "l": "parent"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteIterator",
+    "l": "parent"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "PathMinHeapMixin",
+    "l": "PathMinHeapMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "phaser"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.ae2",
+    "c": "PlatformMixin",
+    "l": "PlatformMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "postApply(String, ClassNode, String, IMixinInfo)",
+    "u": "postApply(java.lang.String,org.objectweb.asm.tree.ClassNode,java.lang.String,org.spongepowered.asm.mixin.extensibility.IMixinInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "preApply(String, ClassNode, String, IMixinInfo)",
+    "u": "preApply(java.lang.String,org.objectweb.asm.tree.ClassNode,java.lang.String,org.spongepowered.asm.mixin.extensibility.IMixinInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "previousIndex()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "previousIndex()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "previousLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "previousLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "DecoderHandlerMixin",
+    "l": "protectPacket(ChannelHandlerContext, ByteBuf, List<Object>, CallbackInfo)",
+    "u": "protectPacket(io.netty.channel.ChannelHandlerContext,io.netty.buffer.ByteBuf,java.util.List,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "put(int, V)",
+    "u": "put(int,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "put(Integer, V)",
+    "u": "put(java.lang.Integer,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "put(long, byte)",
+    "u": "put(long,byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "put(Long, Byte)",
+    "u": "put(java.lang.Long,java.lang.Byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "put(long, int)",
+    "u": "put(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "put(long, long)",
+    "u": "put(long,long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "put(Long, Long)",
+    "u": "put(java.lang.Long,java.lang.Long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "put(long, V)",
+    "u": "put(long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "put(long, V)",
+    "u": "put(long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "put(Long, V)",
+    "u": "put(java.lang.Long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "put(Long, V)",
+    "u": "put(java.lang.Long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "putAll(Map<? extends Integer, ? extends V>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "putAll(Map<? extends Long, ? extends Byte>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "putAll(Map<? extends Long, ? extends Integer>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "putAll(Map<? extends Long, ? extends Integer>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "putAll(Map<? extends Long, ? extends Long>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "putAll(Map<? extends Long, ? extends V>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "putAll(Map<? extends Long, ? extends V>)",
+    "u": "putAll(java.util.Map)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "putAndMoveToFirst(long, int)",
+    "u": "putAndMoveToFirst(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "putAndMoveToLast(long, int)",
+    "u": "putAndMoveToLast(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "putIfAbsent(long, int)",
+    "u": "putIfAbsent(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "putIfAbsent(long, V)",
+    "u": "putIfAbsent(long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "putIfAbsent(Long, V)",
+    "u": "putIfAbsent(java.lang.Long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "putInCache(long, Chunk, ChunkStatus)",
+    "u": "putInCache(long,net.minecraft.world.chunk.Chunk,net.minecraft.world.chunk.ChunkStatus)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "SimpleSidedEnergyContainerMixin",
+    "l": "readSnapshot(Long)",
+    "u": "readSnapshot(java.lang.Long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "DamageTrackerMixin",
+    "l": "recentDamage"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "rem(byte)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "rem(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "rem(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperIntEntryObjectIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperObjectIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingShortIterator",
+    "l": "remove()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "remove(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "remove(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "remove(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "remove(long, int)",
+    "u": "remove(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "remove(long, Object)",
+    "u": "remove(long,java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "remove(Object)",
+    "u": "remove(java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "remove(Object, Object)",
+    "u": "remove(java.lang.Object,java.lang.Object)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "remove(short)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "removeAll(ByteCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.bytes.ByteCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "removeAll(Collection<?>)",
+    "u": "removeAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "removeAll(IntCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "removeAll(IntCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "removeAll(LongCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "removeAll(LongCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "removeAll(LongCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "removeAll(LongCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "removeAll(ShortCollection)",
+    "u": "removeAll(it.unimi.dsi.fastutil.shorts.ShortCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "removeFirstInt()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "removeFirstLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "removeFirstLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "removeLastInt()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "removeLastLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "removeLastLong()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "replace(long, int)",
+    "u": "replace(long,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "replace(long, int, int)",
+    "u": "replace(long,int,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "replace(long, V)",
+    "u": "replace(long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "replace(Long, V)",
+    "u": "replace(java.lang.Long,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "replace(long, V, V)",
+    "u": "replace(long,V,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "replace(Long, V, V)",
+    "u": "replace(java.lang.Long,V,V)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "EntityIndexMixin",
+    "l": "replaceConVars(CallbackInfo)",
+    "u": "replaceConVars(org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "retainAll(ByteCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.bytes.ByteCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "retainAll(Collection<?>)",
+    "u": "retainAll(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "retainAll(IntCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "retainAll(IntCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.ints.IntCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "retainAll(LongCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "retainAll(LongCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "retainAll(LongCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "retainAll(LongCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "retainAll(ShortCollection)",
+    "u": "retainAll(it.unimi.dsi.fastutil.shorts.ShortCollection)"
+}, {"p": "cn.korostudio.c3h6n6o6.mixin", "c": "ServerTaskMixin", "l": "run()"}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerTaskMixin",
+    "l": "runnable"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SectionedEntityCacheMixin",
+    "l": "SectionedEntityCacheMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "LockHelperMixin",
+    "l": "semaphore"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "ServerUtil",
+    "l": "sendQueuedBlockEvents(Deque<BlockEvent>, ServerWorld)",
+    "u": "sendQueuedBlockEvents(java.util.Deque,net.minecraft.server.world.ServerWorld)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SerializingRegionBasedStorageMixin",
+    "l": "SerializingRegionBasedStorageMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "serialVersionUID"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "serialVersionUID"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "serialVersionUID"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "serialVersionUID"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "server"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "ServerChunkManagerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerTaskMixin",
+    "l": "ServerTaskMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "MinecraftServerMixin",
+    "l": "serverThread"
+}, {"p": "cn.korostudio.c3h6n6o6", "c": "C3H6N6O6", "l": "ServerThread"}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "ServerUtil",
+    "l": "ServerUtil()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "ServerWorldMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "set(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "set(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ChunkHolderMixin",
+    "l": "setBlockUpdatesBySection(ShortSet[], int, ShortSet)",
+    "u": "setBlockUpdatesBySection(it.unimi.dsi.fastutil.shorts.ShortSet[],int,it.unimi.dsi.fastutil.shorts.ShortSet)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "setNullCheck(List<OfferedEnergyStorage>, CallbackInfo)",
+    "u": "setNullCheck(java.util.List,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {"p": "cn.korostudio.c3h6n6o6", "c": "C3H6N6O6", "l": "Setting"}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.Long2IntWrapperEntry",
+    "l": "setValue(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.IntWrapperEntry",
+    "l": "setValue(T)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SharedConstantsMixin",
+    "l": "SharedConstantsMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "PathMinHeapMixin",
+    "l": "shiftDownFix(int, CallbackInfo)",
+    "u": "shiftDownFix(int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "PathMinHeapMixin",
+    "l": "shiftUPFix(int, CallbackInfo)",
+    "u": "shiftUPFix(int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "shouldApplyMixin(String, String)",
+    "u": "shouldApplyMixin(java.lang.String,java.lang.String)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "SimpleSidedEnergyContainerMixin",
+    "l": "SimpleSidedEnergyContainerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SimulationDistanceLevelPropagatorMixin",
+    "l": "SimulationDistanceLevelPropagatorMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "size()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.SlimWrappingLongListIterator",
+    "l": "SlimWrappingLongListIterator(Iterator<Long>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.fabric",
+    "c": "SnapshotParticipantMixin",
+    "l": "SnapshotParticipantMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.fabric",
+    "c": "SnapshotParticipantMixin",
+    "l": "snapshots"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "startTick(MinecraftServer)",
+    "u": "startTick(net.minecraft.server.MinecraftServer)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "subMap(long, long)",
+    "u": "subMap(long,long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "subSet(long, long)",
+    "u": "subSet(long,long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "subSet(long, long)",
+    "u": "subSet(long,long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "subSet(long, long)",
+    "u": "subSet(long,long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "subSet(long, long)",
+    "u": "subSet(long,long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "syncAllSet"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "syncedBlockEventCLinkedQueue"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncFuTransformer",
+    "l": "SyncFuTransformer()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncFuTransformer",
+    "l": "syncFuTransformerLogger"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronicityFixer",
+    "l": "SynchronicityFixer()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "SynchronisePlugin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "SynchronizationQueue"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "SynchronizationThread"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SynchronisePlugin",
+    "l": "syncLogger"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(int)",
+    "u": "%3Cinit%3E(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(int, float)",
+    "u": "%3Cinit%3E(int,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(Iterator<?>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(Iterator<?>, float)",
+    "u": "%3Cinit%3E(java.util.Iterator,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(long[])",
+    "u": "%3Cinit%3E(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(long[], float)",
+    "u": "%3Cinit%3E(long[],float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(long[], int, int)",
+    "u": "%3Cinit%3E(long[],int,int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(long[], int, int, float)",
+    "u": "%3Cinit%3E(long[],int,int,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(LongCollection)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongCollection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(LongCollection, float)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongCollection,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(LongIterator)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongIterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "SyncLongLinkedOpenHashSet(LongIterator, float)",
+    "u": "%3Cinit%3E(it.unimi.dsi.fastutil.longs.LongIterator,float)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "synList(CableBlockEntity, List<CableBlockEntity.CableTarget>)",
+    "u": "synList(techreborn.blockentity.cable.CableBlockEntity,java.util.List)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "tailMap(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "tailSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "tailSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "tailSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "tailSet(long)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "targets"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableTickManagerMixin",
+    "l": "targetStorages"
+}, {"p": "cn.korostudio.c3h6n6o6.mixin", "c": "EntityListMixin", "l": "temp"}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldMixin",
+    "l": "thread"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "ThreadID"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin.tech",
+    "c": "CableBlockEntityMixin",
+    "l": "tick(World, BlockPos, BlockState, CableBlockEntity)",
+    "u": "tick(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,techreborn.blockentity.cable.CableBlockEntity)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldTickSchedulerMixin",
+    "l": "tickableChunkTickSchedulers"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldTickSchedulerMixin",
+    "l": "tickableTicks"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldTickSchedulerMixin",
+    "l": "tickedTicks"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "tickEnd(BooleanSupplier, CallbackInfo)",
+    "u": "tickEnd(java.util.function.BooleanSupplier,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SimulationDistanceLevelPropagatorMixin",
+    "l": "tickets"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "Ticking"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.thread",
+    "c": "CalculationController",
+    "l": "tickStart"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "tickStart(BooleanSupplier, CallbackInfo)",
+    "u": "tickStart(java.util.function.BooleanSupplier,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "toArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "toArray(byte[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "toArray(int[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "toArray(int[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "toArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "toArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "toArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "toArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSet",
+    "l": "toArray(R[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.ConvertingObjectSetFast",
+    "l": "toArray(R[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "toArray(short[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "toArray(T[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "toByteArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "toByteArray(byte[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "toIntArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "toIntArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "toIntArray(int[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "toIntArray(int[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentCollections",
+    "l": "toList()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongSortedSet",
+    "l": "toLongArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "toLongArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "toLongArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "toLongArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "toLongArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "toLongArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "toLongArray(long[])"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentShortHashSet",
+    "l": "toShortArray()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SectionedEntityCacheMixin",
+    "l": "trackedPositions"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SectionedEntityCacheMixin",
+    "l": "trackingSections"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "trim()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "trim()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "trim()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "trim()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "ConcurrentLongLinkedOpenHashSet",
+    "l": "trim(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "trim(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "trim(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil.sync",
+    "c": "SyncLongLinkedOpenHashSet",
+    "l": "trim(int)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "TypeFilterableListMixin",
+    "l": "TypeFilterableListMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "unlockInError(BlockPos, BlockState, BlockState, int, CallbackInfo)",
+    "u": "unlockInError(net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.BlockState,int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerWorldMixin",
+    "l": "unlockUpdateListeners(BlockPos, BlockState, BlockState, int, CallbackInfo)",
+    "u": "unlockUpdateListeners(net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.BlockState,int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "SerializingRegionBasedStorageMixin",
+    "l": "unsavedElements"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "EntityIndexMixin",
+    "l": "uuidToEntity"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Int2ObjectConcurrentHashMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ByteConcurrentHashMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentHashMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2IntConcurrentNonLinkedOpenMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2LongConcurrentHashMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectConcurrentHashMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "Long2ObjectOpenConcurrentHashMap",
+    "l": "values()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "ServerChunkManagerMixin",
+    "l": "world"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldMixin",
+    "l": "WorldMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.mixin",
+    "c": "WorldTickSchedulerMixin",
+    "l": "WorldTickSchedulerMixin()",
+    "u": "%3Cinit%3E()"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrap(Collection<K>)",
+    "u": "wrap(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrap(Iterator<Long>)",
+    "u": "wrap(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrap(ListIterator<Long>)",
+    "u": "wrap(java.util.ListIterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrapBytes(Collection<Byte>)",
+    "u": "wrapBytes(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrapInts(Collection<Integer>)",
+    "u": "wrapInts(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrapIntSet(Set<Integer>)",
+    "u": "wrapIntSet(java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrapLongs(Collection<Long>)",
+    "u": "wrapLongs(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrapLongSet(Set<Long>)",
+    "u": "wrapLongSet(java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil",
+    "l": "wrapLongSortedSet(Set<Long>)",
+    "u": "wrapLongSortedSet(java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperIntEntryObjectIterator",
+    "l": "WrapperIntEntryObjectIterator(Iterator<Map.Entry<Integer, T>>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrapperObjectIterator",
+    "l": "WrapperObjectIterator(Iterator<T>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteCollection",
+    "l": "WrappingByteCollection(Collection<Byte>)",
+    "u": "%3Cinit%3E(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingByteIterator",
+    "l": "WrappingByteIterator(Iterator<Byte>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntCollection",
+    "l": "WrappingIntCollection(Collection<Integer>)",
+    "u": "%3Cinit%3E(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntIterator",
+    "l": "WrappingIntIterator(Iterator<Integer>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingIntSet",
+    "l": "WrappingIntSet(Set<Integer>)",
+    "u": "%3Cinit%3E(java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongCollection",
+    "l": "WrappingLongCollection(Collection<Long>)",
+    "u": "%3Cinit%3E(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongIterator",
+    "l": "WrappingLongIterator(Iterator<Long>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongListIterator",
+    "l": "WrappingLongListIterator(ListIterator<Long>)",
+    "u": "%3Cinit%3E(java.util.ListIterator)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSet",
+    "l": "WrappingLongSet(Set<Long>)",
+    "u": "%3Cinit%3E(java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingLongSortedSet",
+    "l": "WrappingLongSortedSet(Set<Long>)",
+    "u": "%3Cinit%3E(java.util.Set)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingObjectCollection",
+    "l": "WrappingObjectCollection(Collection<V>)",
+    "u": "%3Cinit%3E(java.util.Collection)"
+}, {
+    "p": "cn.korostudio.c3h6n6o6.fastutil",
+    "c": "FastUtilHackUtil.WrappingShortIterator",
+    "l": "WrappingShortIterator(Iterator<Short>)",
+    "u": "%3Cinit%3E(java.util.Iterator)"
+}];
+updateSearchResults();
