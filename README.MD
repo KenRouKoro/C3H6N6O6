@@ -10,6 +10,14 @@ ps:你可以叫它黑索金 | You can call it Cyclonite.
 **Now fully supported for single player**
 
 ****
+[Modrinth](https://modrinth.com/mod/c3h6n6o6)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/c3h6n6o6)
+[JavaDoc](https://doc.c3h6n6o6.korostudio.cn/)
+[MC百科](https://www.mcmod.cn/class/6841.html)
+[MCBBS](https://www.mcbbs.net/thread-1359824-1-1.html)
+
+
+****
 这是一个用于实体多线程运算的模组，适用于Minecraft1.18.2 Fabric。
 它与大多数模组兼容，与锂兼容需要关闭锂的entity和collections
 
