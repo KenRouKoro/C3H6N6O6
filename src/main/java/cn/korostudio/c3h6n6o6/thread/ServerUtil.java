@@ -9,6 +9,11 @@ import java.util.Deque;
 import java.util.Iterator;
 @Slf4j
 public class ServerUtil {
+    /**
+     * 别问吾，这玩意是MCMT的产物，用来妥善分发的，虽然证实没啥大用（
+     * @param d 双向队列（方块事件）
+     * @param sw 服务器世界对象
+     */
     public synchronized static void sendQueuedBlockEvents(Deque<BlockEvent> d, ServerWorld sw) {
 
         Iterator<BlockEvent> bed = d.iterator();
@@ -16,9 +21,6 @@ public class ServerUtil {
             BlockEvent BlockEvent = bed.next();
             if (sw.processBlockEvent(BlockEvent)) {
                 sw.getServer().getPlayerManager().sendToAround(null, BlockEvent.pos().getX(), BlockEvent.pos().getY(), BlockEvent.pos().getZ(), 64.0D, sw.getRegistryKey(), new BlockEventS2CPacket(BlockEvent.pos(), BlockEvent.block(), BlockEvent.type(), BlockEvent.data()));
-            }
-            if (!CalculationController.getTicking().get()) {
-                log.warn("阻止tick以外的更新.");
             }
             bed.remove();
         }

@@ -12,15 +12,21 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 
-
+/**
+ * 一般路过改造Mixin
+ */
 @Mixin(SectionedEntityCache.class)
 public abstract class SectionedEntityCacheMixin<T extends EntityLike> {
-
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable
     private LongSortedSet trackedPositions = new ConcurrentLongSortedSet();
-
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable

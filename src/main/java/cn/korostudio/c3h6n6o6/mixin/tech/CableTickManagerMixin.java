@@ -12,17 +12,29 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.LinkedBlockingDeque;
 
-
+/**
+ * CableTickManager并发改造Mixin
+ * 爷全给汝换喽
+ */
 @Mixin(CableTickManager.class)
 public class CableTickManagerMixin {
+    /**
+     * 改造~改造~
+     */
     @Shadow(remap = false)
     @Final
     @Mutable
     private static List<CableBlockEntity> cableList = new CopyOnWriteArrayList<>();
+    /**
+     * 改造~改造~
+     */
     @Shadow(remap = false)
     @Final
     @Mutable
     private static List<Object> targetStorages = new CopyOnWriteArrayList<>();
+    /**
+     * 改造~改造~
+     */
     @Shadow(remap = false)
     @Final
     @Mutable

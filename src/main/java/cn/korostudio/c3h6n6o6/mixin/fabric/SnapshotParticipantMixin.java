@@ -10,8 +10,15 @@ import org.spongepowered.asm.mixin.Shadow;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * 咋FabricAPI也喜欢用Arraylist啊（撅望
+ * @param <T> 为什么模板也要写JavaDOC啊（恼
+ */
 @Mixin(SnapshotParticipant.class)
 public class SnapshotParticipantMixin<T> {
+    /**
+     * 爷直接给汝改喽！
+     */
     @Shadow
     @Final
     @Mutable

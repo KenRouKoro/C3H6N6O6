@@ -13,19 +13,23 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 
+/**
+ * 一般路过改造Mixin
+ */
 @Mixin(SimulationDistanceLevelPropagator.class)
-public abstract class SimulationDistanceLevelPropagatorMixin extends ChunkPosDistanceLevelPropagator {
+public abstract class SimulationDistanceLevelPropagatorMixin  {
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable
     protected Long2ByteMap levels = new Long2ByteConcurrentHashMap();
-
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable
     private Long2ObjectOpenHashMap<SortedArraySet<ChunkTicket<?>>> tickets = new Long2ObjectOpenConcurrentHashMap<>();
-
-    protected SimulationDistanceLevelPropagatorMixin(int i, int j, int k) {
-        super(i, j, k);
-    }
 }

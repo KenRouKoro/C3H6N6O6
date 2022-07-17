@@ -12,10 +12,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
  * 这里使得AE2项目组编写的验证是否为服务主线程的逻辑正常化。
  * Here the logic written by the AE2 project team to verify that it is the main thread of the service is normalised.
  */
-
-
 @Mixin(Platform.class)
 public class PlatformMixin {
+    /**
+     * 别和吾说什么非原创代码，MCMTCE也是吾的项目（怒视
+     * @param cir 这玩意去问海绵组去
+     */
     @Inject( method = "isServer",at = @At("HEAD"),cancellable = true,remap = false)
     private static void isServerEX(CallbackInfoReturnable<Boolean> cir){
         try {

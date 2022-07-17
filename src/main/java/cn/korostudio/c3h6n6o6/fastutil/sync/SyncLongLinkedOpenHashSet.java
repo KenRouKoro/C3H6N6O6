@@ -2,11 +2,13 @@ package cn.korostudio.c3h6n6o6.fastutil.sync;
 
 import it.unimi.dsi.fastutil.longs.*;
 
+import java.io.Serial;
 import java.util.Collection;
 import java.util.Iterator;
 
 public class SyncLongLinkedOpenHashSet extends LongLinkedOpenHashSet {
 
+    @Serial
     private static final long serialVersionUID = -5532128240738069111L;
 
     public SyncLongLinkedOpenHashSet() {

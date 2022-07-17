@@ -59,10 +59,6 @@ public abstract class ServerChunkManagerMixin extends ChunkManager {
     @Final
     @Mutable
     private Chunk[] chunkCache;
-    @Shadow
-    @Final
-    @Mutable
-    Thread serverThread;
 
 
 

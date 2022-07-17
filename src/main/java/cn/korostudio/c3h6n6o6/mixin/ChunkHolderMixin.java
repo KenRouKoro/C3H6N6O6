@@ -16,19 +16,39 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+/**
+ * MCMTCE那边的并发改造代码（
+ */
 @Mixin(ChunkHolder.class)
 public class ChunkHolderMixin {
-
+    /**
+     * blockUpdatesBySection镜像
+     */
     @Mutable
     @Shadow
     @Final
     private ShortSet[] blockUpdatesBySection;
 
+    /**
+     * 实例化时修改blockUpdatesBySection为并发兼容的数据结构
+     * @param pos 问MJ去
+     * @param level 问MJ去
+     * @param world 问MJ去
+     * @param lightingProvider 问MJ去
+     * @param levelUpdateListener 问MJ去
+     * @param playersWatchingChunkProvider 问MJ去
+     * @param ci 问海绵组去
+     */
     @Inject(method = "<init>", at = @At(value = "FIELD", target = "Lnet/minecraft/server/world/ChunkHolder;blockUpdatesBySection:[Lit/unimi/dsi/fastutil/shorts/ShortSet;", opcode = Opcodes.PUTFIELD, shift = At.Shift.AFTER))
     private void overwriteShortSet(ChunkPos pos, int level, HeightLimitView world, LightingProvider lightingProvider, ChunkHolder.LevelUpdateListener levelUpdateListener, ChunkHolder.PlayersWatchingChunkProvider playersWatchingChunkProvider, CallbackInfo ci) {
         this.blockUpdatesBySection = new ConcurrentShortHashSet[world.countVerticalSections()];
     }
-
+    /**
+     * 更新时修改blockUpdatesBySection为并发兼容的数据结构
+     * @param array 问MJ去
+     * @param index 问MJ去
+     * @param value 问MJ去
+     */
     @Redirect(method = "markForBlockUpdate", at = @At(value = "FIELD", target = "Lnet/minecraft/server/world/ChunkHolder;blockUpdatesBySection:[Lit/unimi/dsi/fastutil/shorts/ShortSet;", args = "array=set"))
     private void setBlockUpdatesBySection(ShortSet[] array, int index, ShortSet value) {
         array[index] = new ConcurrentShortHashSet();

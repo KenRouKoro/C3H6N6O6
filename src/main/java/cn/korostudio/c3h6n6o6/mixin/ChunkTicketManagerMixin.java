@@ -12,14 +12,21 @@ import org.spongepowered.asm.mixin.Shadow;
 
 import java.util.Set;
 
+/**
+ * 数据结构改造用Mixin
+ */
 @Mixin(ChunkTicketManager.class)
 public abstract class ChunkTicketManagerMixin {
-
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable
     Set<ChunkHolder> chunkHolders = ConcurrentCollections.newHashSet();
-
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable

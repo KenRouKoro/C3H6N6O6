@@ -7,10 +7,14 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 
 import java.util.concurrent.Semaphore;
-
+/**
+ * 一般路过改造Mixin
+ */
 @Mixin(LockHelper.class)
 public abstract class LockHelperMixin<T> {
-
+    /**
+     * 玄学改造.png
+     */
     @Shadow
     @Final
     @Mutable

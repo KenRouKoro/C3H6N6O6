@@ -30,20 +30,43 @@ import static cn.korostudio.c3h6n6o6.C3H6N6O6.Setting;
  */
 @Slf4j
 public class CalculationController {
+    /**
+     * 线程池执行器
+     */
     protected static ExecutorService executor ;
+    /**
+     * Tick执行中指示器
+     */
     @Getter
     protected static AtomicBoolean Ticking = new AtomicBoolean();
+    /**
+     * 客户端指示器
+     */
     @Getter
     protected static AtomicBoolean Client = new AtomicBoolean(false);
+    /**
+     * 线程序号
+     */
     protected static AtomicInteger ThreadID = null;
+    /**
+     * 线程池同步用同步屏障
+     */
     @Getter
     protected static Phaser phaser;
+    /**
+     * Tick开始时间标识，暂时没有用，为日后性能统计留
+     */
     @Getter
     protected static long tickStart = 0;
+    /**
+     * MC服务器对象
+     */
     @Getter
     protected static MinecraftServer server;
 
-
+    /**
+     * 初始化方法
+     */
     static public void Init(){
         ThreadID = new AtomicInteger();
         ForkJoinPool.ForkJoinWorkerThreadFactory poolThreadFactory = p -> {
@@ -57,10 +80,15 @@ public class CalculationController {
             e.printStackTrace();
         }, true);
     }
+
+    /**
+     * Tick开始方法
+     * @param server MC服务器对象
+     */
     public static void startTick(MinecraftServer server) {
 
         if (phaser != null) {
-            log.warn("多次TickStart?什么鬼！");
+            log.warn("多次Tick Start?什么鬼！");
             log.info("Server 参数状态:"+server);
             return;
         }else if(! Client.get()){
@@ -71,6 +99,11 @@ public class CalculationController {
         phaser = new Phaser();
         phaser.register();
     }
+
+    /**
+     * Tick结束方法，会等待线程池所有工作执行完毕
+     * @param server MC服务器对象
+     */
     public static void endTick(MinecraftServer server) {
         if ((Client.get())||(CalculationController.server == server)){
             phaser.arriveAndAwaitAdvance();
@@ -80,6 +113,11 @@ public class CalculationController {
             log.warn("多个服务器?什么鬼！");
         }
     }
+
+    /**
+     * 执行实体Tick
+     * @param entityIn 实体对象
+     */
     public static void callEntityTick(Entity entityIn) {
         if (Setting.getBool("EntityDisabled",false)){
             entityIn.tick();
@@ -121,43 +159,42 @@ public class CalculationController {
             }
         });
     }
-    public static void callBlockEntityTick(BlockEntityTickInvoker tte) {
+
+    /**
+     * 执行方块实体
+     * @param blockEntityTick BlockEntity对象
+     */
+    public static void callBlockEntityTick(BlockEntityTickInvoker blockEntityTick) {
         if (Setting.getBool("BlockEntityDisabled",false)) {
-            tte.tick();
+            blockEntityTick.tick();
             return;
         }
-        //检查是否为容器类
-        if(tte instanceof Inventory){
-            tte.tick();
-            return;
-        }
+        //检查是否为容器类，容器类直接tick，不直接tick会出问题，大概是没修改ServerChunkManger的并发限制导致的，但要与C2ME兼容就改不了那里（C2ME是从Mixin又做了一次并发限制，明明已经改造的可以并发了，淦哦），QAQ
+        //不过大多数能造成卡顿的Mod的实体类也不是容器类（例如线缆那种），所以影响还是不太大，虽然还是很奇怪就是了（（（
+        //if(blockEntityTick instanceof Inventory){
+        //    blockEntityTick.tick();
+        //    return;
+        //}
+        //beta6：草，只用禁止玩家实体并行化就行了，什么tm玄学问题，淦！！！！！
+
         //判断是否处于tick中，不处于直接tick方块实体
         if(!Ticking.get()){
-            tte.tick();
+            blockEntityTick.tick();
             return;
         }
         phaser.register();
         executor.execute(() -> {
             try {
-                tte.tick();
+                blockEntityTick.tick();
 
             } catch (Exception e) {
-                log.error("黑索金捕捉到在方块实体tick:" + Thread.currentThread().getName() + "发生异常，异常点位于：" + tte.getPos().toString());
-                e.printStackTrace();
+                if(Setting.getBool("logBlockEntityException",true)) {
+                    log.error("黑索金捕捉到在方块实体tick:" + Thread.currentThread().getName() + "发生异常，异常点位于：" + blockEntityTick.getPos().toString());
+                    e.printStackTrace();
+                }
             } finally {
                 phaser.arriveAndDeregister();
             }
         });
-    }
-
-    public static void sendQueuedBlockEvents(Deque<BlockEvent> d, ServerWorld sw) {
-        Iterator<BlockEvent> bed = d.iterator();
-        while (bed.hasNext()) {
-            BlockEvent BlockEvent = bed.next();
-            if (sw.processBlockEvent(BlockEvent)) {
-                sw.getServer().getPlayerManager().sendToAround(null, BlockEvent.pos().getX(), BlockEvent.pos().getY(), BlockEvent.pos().getZ(), 64.0D, sw.getRegistryKey(), new BlockEventS2CPacket(BlockEvent.pos(), BlockEvent.block(), BlockEvent.type(), BlockEvent.data()));
-            }
-            bed.remove();
-        }
     }
 }

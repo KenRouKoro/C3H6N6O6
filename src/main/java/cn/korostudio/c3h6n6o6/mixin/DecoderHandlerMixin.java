@@ -16,17 +16,27 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
 
+/**
+ * 对DecoderHandler的Mixin
+ */
 @Mixin(value = DecoderHandler.class ,priority = 10)
 public class DecoderHandlerMixin  {
+    /**
+     * LOGGER镜像
+     */
     @Final
     @Mutable
     @Shadow
     private static  Logger LOGGER;
-    @Final
-    @Mutable
-    @Shadow
-    private  NetworkSide side;
 
+    /**
+     * 套try后可以妥善处理部分正常的异常（
+     * @param instance 问MJ去
+     * @param side 问MJ去
+     * @param packetId 问MJ去
+     * @param buf 问MJ去
+     * @return 问MJ去
+     */
     @Redirect(method = "decode",at = @At(value = "INVOKE",target = "Lnet/minecraft/network/NetworkState;getPacketHandler(Lnet/minecraft/network/NetworkSide;ILnet/minecraft/network/PacketByteBuf;)Lnet/minecraft/network/Packet;"))
     private @Nullable Packet<?> fixError(NetworkState instance, NetworkSide side, int packetId, PacketByteBuf buf){
         try {
@@ -35,6 +45,14 @@ public class DecoderHandlerMixin  {
             return null;
         }
     }
+
+    /**
+     * 异常拦截
+     * @param ctx 问MJ去
+     * @param buf 问MJ去
+     * @param objects 问MJ去
+     * @param ci 问MJ去
+     */
     @Inject(method = "decode",at = @At(value = "INVOKE",target = "Ljava/io/IOException;<init>(Ljava/lang/String;)V"),cancellable = true)
     private void protectPacket(ChannelHandlerContext ctx, ByteBuf buf, List<Object> objects, CallbackInfo ci){
         LOGGER.warn("decode故障，黑索金已拦截该报错。");

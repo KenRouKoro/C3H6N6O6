@@ -7,11 +7,10 @@ import org.apache.logging.log4j.Logger;
 
 public class SyncFuTransformer implements PreLaunchEntrypoint {
     private static final Logger syncFuTransformerLogger = LogManager.getLogger();
-    private boolean isActive = true;
 
     @Override
     public void onPreLaunch() {
-        syncFuTransformerLogger.info("On SyncFuTransformer PreLaunch...");
+        syncFuTransformerLogger.info("SyncFuTransformer预加载方法中...");
         try {
             Knot.getLauncher().loadIntoTarget("it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap");
             Knot.getLauncher().loadIntoTarget("it.unimi.dsi.fastutil.longs.LongLinkedOpenHashSet");

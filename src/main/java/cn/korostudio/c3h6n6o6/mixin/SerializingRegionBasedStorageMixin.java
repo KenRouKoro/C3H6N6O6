@@ -11,13 +11,23 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 
 import java.util.Optional;
-
+/**
+ * 一般路过改造Mixin
+ */
 @Mixin(SerializingRegionBasedStorage.class)
 public abstract class SerializingRegionBasedStorageMixin<R> implements AutoCloseable {
-    @Shadow @Final
+    /**
+     * 改造~改造~~
+     */
+    /*
+    @Shadow
+    @Final
     @Mutable
     private Long2ObjectMap<Optional<R>> loadedElements = new Long2ObjectConcurrentHashMap<>();
-
+     */
+    /**
+     * 改造~改造~~
+     */
     @Shadow @Final
     @Mutable
     private LongLinkedOpenHashSet unsavedElements = new ConcurrentLongLinkedOpenHashSet();

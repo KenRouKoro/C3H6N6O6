@@ -9,9 +9,14 @@ import org.spongepowered.asm.mixin.Shadow;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-
+/**
+ * 数据结构改造用Mixin
+ */
 @Mixin(DamageTracker.class)
 public class DamageTrackerMixin {
+    /**
+     * 改造~改造~~
+     */
     @Shadow
     @Final
     @Mutable

@@ -28,7 +28,9 @@ import java.util.concurrent.LinkedTransferQueue;
  **/
 @Mixin(CableBlockEntity.class)
 public class CableBlockEntityMixin extends BlockEntity implements BlockEntityTicker<CableBlockEntity> {
-
+    /**
+     * 那会吾还不会用@Slf4j
+     */
     private static Logger LOGGER = LoggerFactory.getLogger("C3H6N6O6CWTechMixin");
     /**
      * 一个有界阻塞队列，用于缓存线缆实体。
@@ -49,25 +51,37 @@ public class CableBlockEntityMixin extends BlockEntity implements BlockEntityTic
         SynchronizationThread.start();
     }
 
+    /**
+     * 兼容。。兼容。。。
+     */
     @Shadow(remap = false)
     List<CableBlockEntity.CableTarget> targets;
-
+    /**
+     * 兼容。。兼容。。。
+     */
     public CableBlockEntityMixin(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
     }
 
-
+    /**
+     * 兼容。。兼容。。。
+     */
     @Redirect(remap = false,method = "appendTargets", at = @At(value = "FIELD", target = "Ltechreborn/blockentity/cable/CableBlockEntity;targets:Ljava/util/List;", opcode = Opcodes.PUTFIELD))
     private void synList(CableBlockEntity instance, List<CableBlockEntity.CableTarget> value) {
         targets = Collections.synchronizedList(value);
     }
+    /**
+     * 兼容。。兼容。。。
+     */
     @Inject(remap = false,method = "appendTargets",at = @At(value = "INVOKE", target ="Ljava/util/List;iterator()Ljava/util/Iterator;"),cancellable = true)
     private void setNullCheck(List<OfferedEnergyStorage> targetStorages, CallbackInfo ci){
         if(targets==null){
             ci.cancel();
         }
     }
-
+    /**
+     * 兼容。。兼容。。。
+     */
     @Override
     public void tick(World world, BlockPos pos, BlockState state, CableBlockEntity blockEntity2) {
         if (world != null && !world.isClient) {

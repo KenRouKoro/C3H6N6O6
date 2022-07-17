@@ -21,18 +21,29 @@ import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * WorldTickScheduler并发改造Mixin类
+ * @param <T> 这玩意就别问了，烦了
+ */
 @Mixin(WorldTickScheduler.class)
-public abstract class WorldTickSchedulerMixin<T> implements QueryableTickScheduler<T> {
+public abstract class WorldTickSchedulerMixin<T> {
+    /**
+     * 改造~~改造~~
+     */
     @Shadow
     @Final
     @Mutable
     private Long2ObjectMap<ChunkTickScheduler<T>> chunkTickSchedulers = new Long2ObjectOpenConcurrentHashMap<>();
-
+    /**
+     * 改造~~改造~~
+     */
     @Shadow
     @Final
     @Mutable
     private Queue<ChunkTickScheduler<T>> tickableChunkTickSchedulers = ConcurrentCollections.newArrayDeque();
-
+    /**
+     * 改造~~改造~~
+     */
     @Shadow
     @Final
     @Mutable
@@ -41,7 +52,9 @@ public abstract class WorldTickSchedulerMixin<T> implements QueryableTickSchedul
     @Final
     @Mutable
     private  Long2LongMap nextTriggerTickByChunkPos = new Long2LongConcurrentHashMap(Long.MAX_VALUE);//Util.make(new Long2LongConcurrentHashMap(Long.MAX_VALUE), map -> map.defaultReturnValue(Long.MAX_VALUE));;
-
+    /**
+     * 改造~~改造~~
+     */
     @Shadow
     @Final
     @Mutable
