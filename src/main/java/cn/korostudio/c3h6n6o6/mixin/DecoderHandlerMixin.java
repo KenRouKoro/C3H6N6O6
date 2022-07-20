@@ -55,7 +55,8 @@ public class DecoderHandlerMixin  {
      */
     @Inject(method = "decode",at = @At(value = "INVOKE",target = "Ljava/io/IOException;<init>(Ljava/lang/String;)V"),cancellable = true)
     private void protectPacket(ChannelHandlerContext ctx, ByteBuf buf, List<Object> objects, CallbackInfo ci){
-        LOGGER.warn("decode故障，黑索金已拦截该报错。");
+        //LOGGER.warn("decode故障，黑索金已拦截该报错。");
+        //这个错没必要报
         ci.cancel();
     }
 

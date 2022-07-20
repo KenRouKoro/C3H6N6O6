@@ -1,21 +1,13 @@
 package cn.korostudio.c3h6n6o6.thread;
 
-import cn.hutool.core.thread.ThreadUtil;
 import cn.korostudio.c3h6n6o6.C3H6N6O6;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.network.packet.s2c.play.BlockEventS2CPacket;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.world.BlockEvent;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.world.World;
 import net.minecraft.world.chunk.BlockEntityTickInvoker;
 
-import java.util.Deque;
-import java.util.Iterator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinWorkerThread;
@@ -24,6 +16,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static cn.korostudio.c3h6n6o6.C3H6N6O6.Setting;
+import static cn.korostudio.c3h6n6o6.thread.ServerUtil.LogErrorUtil;
 
 /**
  * 核心控制器
@@ -141,18 +134,18 @@ public class CalculationController {
             }catch (NullPointerException e){
                 if(Setting.getBool("logEntityException",true)){
                     log.warn("黑索金捕捉到在实体Tick:" + Thread.currentThread().getName() + "有单独的空指针异常，可能是实体出了点小问题，如果有假死的实体，重启服务器，大概率能解决。");
-                    e.printStackTrace();
+                    LogErrorUtil(e);
                 }
             }catch(IllegalArgumentException e){
                 if(Setting.getBool("logEntityException",true)) {
                     log.warn("黑索金捕捉到在实体Tick:" + Thread.currentThread().getName() + "有线程安全报错。");
-                    e.printStackTrace();
+                    LogErrorUtil(e);
                 }
             } catch (Exception e){
                 if(Setting.getBool("logEntityException",true)) {
                     String eMessage = e.getMessage();
-                    log.error("黑索金捕捉到在实体Tick:" + Thread.currentThread().getName() + " 抛出异常:" + e.getClass().getName() + ":" + eMessage+"\n");
-                    e.printStackTrace();
+                    log.error("黑索金捕捉到在实体Tick:" + Thread.currentThread().getName() + " 抛出异常:" + e.getClass().getName() + ":" + eMessage + "\n");
+                    LogErrorUtil(e);
                 }
             } finally {
                 phaser.arriveAndDeregister();
@@ -187,10 +180,15 @@ public class CalculationController {
             try {
                 blockEntityTick.tick();
 
+            } catch (RuntimeException e) {
+                if (Setting.getBool("logBlockEntityRuntimeException", false)) {
+                    log.error("黑索金捕捉到在方块实体tick:" + Thread.currentThread().getName() + "发生运行时异常，异常点位于：" + blockEntityTick.getPos().toString());
+                    LogErrorUtil(e);
+                }
             } catch (Exception e) {
-                if(Setting.getBool("logBlockEntityException",true)) {
+                if (Setting.getBool("logBlockEntityException", true)) {
                     log.error("黑索金捕捉到在方块实体tick:" + Thread.currentThread().getName() + "发生异常，异常点位于：" + blockEntityTick.getPos().toString());
-                    e.printStackTrace();
+                    LogErrorUtil(e);
                 }
             } finally {
                 phaser.arriveAndDeregister();

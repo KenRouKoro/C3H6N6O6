@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.12.1'
+    id 'fabric-loom' version '0.12-SNAPSHOT'
     id 'maven-publish'
     id "io.freefair.lombok" version "6.4.3"
 }
@@ -24,6 +24,152 @@ repositories {
             includeGroup 'appeng'
         }
     }
+    maven {
+        url "https://maven.parchmentmc.net/"
+        content {
+            includeGroup "org.parchmentmc.data"
+        }
+    }
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        url "https://maven.shedaniel.me"
+        content {
+            includeGroup "me.sargunvohra.mcmods"
+            includeGroup "me.shedaniel.cloth"
+            includeGroup "me.shedaniel"
+            includeGroup "dev.architectury"
+        }
+    }
+    maven {
+        url 'https://maven.bai.lol'
+        content {
+            includeGroup "lol.bai"
+            includeGroup "mcp.mobius.waila"
+        }
+    }
+
+
+    // for KJS
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    // for ARRP
+    maven {
+        url = "https://storage.googleapis.com/devan-maven/"
+        content {
+            includeGroup "net.devtech"
+        }
+    }
+    // for Patchouli
+    maven {
+        url 'https://maven.blamejared.com'
+    }
+    // for WTHIT
+    maven {
+        url 'https://maven.bai.lol'
+    }
+    // for AE2
+    maven {
+        name "Modmaven"
+        url "https://modmaven.dev"
+        content {
+            includeGroup "appeng"
+        }
+    }
+    maven {
+        url "https://maven.shedaniel.me"
+        content {
+            includeGroup "me.sargunvohra.mcmods"
+            includeGroup "me.shedaniel.cloth"
+            includeGroup "me.shedaniel"
+            includeGroup "dev.architectury"
+        }
+    }
+    maven {
+        url "https://maven.terraformersmc.com"
+        content {
+            includeGroup "com.terraformersmc"
+        }
+    }
+    // for DashLoader
+    maven {
+        name "DashLoader"
+        url 'https://maven.oskarstrom.net'
+        content {
+            includeGroup "net.oskarstrom"
+        }
+    }
+    maven {
+        name 'Jitpack for MI'
+        url 'https://jitpack.io'
+        content {
+            includeGroup "com.github.KubeJS-Mods"
+            includeGroup "com.github.GabrielOlvH"
+            /* For Magna */
+            includeGroup "com.github.Draylar"
+            includeGroup "com.github.Draylar.omega-config"
+        }
+    }
+    // to build indrev
+    maven {
+        name = "CottonMC"
+        url = "https://server.bbkr.space/artifactory/libs-release"
+        content {
+            includeGroup "io.github.cottonmc"
+        }
+    }
+    maven {
+        name = "dblsaiko"
+        url = "https://maven.dblsaiko.net/"
+    }
+    maven {
+        name = "Technici4n"
+        url = "https://raw.githubusercontent.com/Technici4n/Technici4n-maven/master/"
+        content {
+            includeGroup "net.fabricmc.fabric-api"
+            includeGroup "dev.technici4n"
+            includeGroup "dev.latvian.mods"
+        }
+    }
+    maven {
+        url "https://maven.saps.dev/minecraft"
+        content {
+            includeGroup "dev.latvian.mods"
+            includeGroup "dev.ftb.mods"
+        }
+    }
+    // for reach entity attributes, required by Magna
+    maven {
+        url = "https://maven.jamieswhiteshirt.com/libs-release/"
+        content {
+            includeGroup "com.jamieswhiteshirt"
+        }
+    }
+    // for PlayerAbilityLib
+    maven {
+        name = 'Ladysnake Mods'
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
+        content {
+            includeGroup 'io.github.ladysnake'
+            includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+        }
+    }
+    maven {
+        url "https://maven.parchmentmc.net/"
+        content {
+            includeGroup "org.parchmentmc.data"
+        }
+    }
+
+
     mavenCentral()
     maven { url = "https://api.modrinth.com/maven" }
     maven { url = "https://cursemaven.com" }
@@ -57,7 +203,11 @@ dependencies {
     compileOnly "appeng:appliedenergistics2:11.0.0-alpha.5"
     modImplementation "RebornCore:RebornCore-unknown:5.2.0+local"
     modImplementation "TechReborn:TechReborn-unknown:5.2.0+local"
-    //modImplementation "com.simibubi:CreateFabric:mc1.18.2_v0.4.1"
+    compileOnly "com.simibubi:CreateFabric:mc1.18.2_v0.4.1"
+    compileOnly "dev.technici4n:Modern-Dynamics:local"
+    modImplementation "com.ishland.c2me:c2me-fixes-worldgen-threading-issues:0.2.0+alpha.8.26"
+    modImplementation "aztech:Modern-Industrialization:local"
+
 }
 
 processResources {

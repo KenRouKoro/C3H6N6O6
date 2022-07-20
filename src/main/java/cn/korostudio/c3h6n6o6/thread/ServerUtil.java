@@ -25,4 +25,13 @@ public class ServerUtil {
             bed.remove();
         }
     }
+
+    /**
+     * 异常堆栈打印助手
+     *
+     * @param ex 异常对象
+     */
+    public static void LogErrorUtil(Exception ex) {
+        log.error("黑索金异常捕捉:", ex);
+    }
 }

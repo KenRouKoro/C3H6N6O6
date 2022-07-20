@@ -27,6 +27,7 @@
     "WorldMixin",
     "WorldTickSchedulerMixin",
     "ae2.PlatformMixin",
+    "c2me.CheckedThreadLocalRandomMixin",
     "fabric.SnapshotParticipantMixin",
     "tech.CableBlockEntityMixin",
     "tech.CableTickManagerMixin",
