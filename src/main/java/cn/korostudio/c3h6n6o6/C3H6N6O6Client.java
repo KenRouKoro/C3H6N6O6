@@ -15,5 +15,6 @@ public class C3H6N6O6Client implements ClientModInitializer {
     public void onInitializeClient() {
         log.info("黑索金检测到在客户端运行，将使用客户端策略！");
         CalculationController.getClient().set(true);
+
     }
 }
