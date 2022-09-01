@@ -19,6 +19,8 @@ import org.spongepowered.asm.mixin.Mixin;
                 , "net.minecraft.util.math.random.CheckedRandom", "net.minecraft.world.level.storage.LevelStorage.Session", "com.simibubi.create.content.contraptions.KineticNetwork"
                 , "aztech.modern_industrialization.machines.recipe.MachineRecipeType", "aztech.modern_industrialization.machines.multiblocks.world.ChunkPosMultiMap"
                 , "com.simibubi.create.content.logistics.RedstoneLinkNetworkHandler", "appeng.helpers.ForgeEnergyAdapter", "net.fabricmc.fabric.impl.transfer.transaction.TransactionManagerImpl$TransactionImpl"
+                , "it.unimi.dsi.fastutil.objects.ObjectOpenHashSet", "net.minecraft.server.world.ServerEntityManager.Listener", "it.unimi.dsi.fastutil.objects.Reference2ReferenceArrayMap"
+
         },priority = 50000)
 public class SynchronicityFixer {
 }
