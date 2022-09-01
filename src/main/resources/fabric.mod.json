@@ -29,9 +29,9 @@
     "C3H6N6O6.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": ">=1.18.2",
+    "minecraft": ">=1.19",
     "koroworld-lib": "*"
   }
 }

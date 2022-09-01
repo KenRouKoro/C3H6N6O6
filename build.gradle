@@ -203,9 +203,9 @@ dependencies {
     compileOnly "appeng:appliedenergistics2:11.0.0-alpha.5"
     modImplementation "RebornCore:RebornCore-unknown:5.2.0+local"
     modImplementation "TechReborn:TechReborn-unknown:5.2.0+local"
-    compileOnly "com.simibubi:CreateFabric:mc1.18.2_v0.4.1"
+    compileOnly "com.simibubi.create:create-fabric-1.18.2:0.5.0c"
     compileOnly "dev.technici4n:Modern-Dynamics:local"
-    modImplementation "com.ishland.c2me:c2me-fixes-worldgen-threading-issues:0.2.0+alpha.8.26"
+    modImplementation "com.ishland.c2me:c2me-fixes-worldgen-threading-issues:0.2.0+alpha.8.78"
     modImplementation "aztech:Modern-Industrialization:local"
 
 }
