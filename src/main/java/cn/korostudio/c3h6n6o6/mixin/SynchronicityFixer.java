@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.Mixin;
                 , "net.minecraft.server.world.ThreadedAnvilChunkStorage", "it.unimi.dsi.fastutil.objects.Reference2ReferenceOpenHashMap", "it.unimi.dsi.fastutil.objects.ReferenceOpenHashSet", "net.minecraft.world.entity.EntityTrackingSection"//,"it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet"
                 , "net.minecraft.world.tick.ChunkTickScheduler", "net.minecraft.world.poi.PointOfInterestStorage", "net.minecraft.entity.ai.pathing.Path", "net.minecraft.entity.ai.pathing.EntityNavigation"
                 , "appeng.me.service.EnergyService", "dev.technici4n.moderndynamics.network.NetworkManager", "com.simibubi.create.foundation.advancement.CriterionTriggerBase"
-                , "net.minecraft.world.gen.random.AtomicSimpleRandom", "net.minecraft.world.level.storage.LevelStorage.Session", "com.simibubi.create.content.contraptions.KineticNetwork"
+                , "net.minecraft.util.math.random.CheckedRandom", "net.minecraft.world.level.storage.LevelStorage.Session", "com.simibubi.create.content.contraptions.KineticNetwork"
                 , "aztech.modern_industrialization.machines.recipe.MachineRecipeType", "aztech.modern_industrialization.machines.multiblocks.world.ChunkPosMultiMap"
                 , "com.simibubi.create.content.logistics.RedstoneLinkNetworkHandler", "appeng.helpers.ForgeEnergyAdapter", "net.fabricmc.fabric.impl.transfer.transaction.TransactionManagerImpl$TransactionImpl"
         },priority = 50000)
