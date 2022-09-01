@@ -58,6 +58,7 @@ public abstract class MinecraftServerMixin extends ReentrantThreadExecutor<Serve
 
     /**
      * 拦截不是的情况~~毕竟是并发环境
+     *
      * @param minecraftServer mc服务器对象
      * @return 问MJ去
      */
@@ -66,6 +67,16 @@ public abstract class MinecraftServerMixin extends ReentrantThreadExecutor<Serve
         return true;
     }
 
+    /**
+     * 获取MinecraftServer实例
+     *
+     * @param shouldKeepTicking
+     * @param ci
+     */
+    @Inject(method = "tick", at = @At("HEAD"))
+    private void getServerObject(BooleanSupplier shouldKeepTicking, CallbackInfo ci) {
+        CalculationController.setServer((MinecraftServer) (Object) this);
+    }
     /*
     @Inject(method = "tickWorlds", at = @At(value = "INVOKE", target = "Ljava/lang/Iterable;iterator()Ljava/util/Iterator;"))
     private void preTick(BooleanSupplier shouldKeepTicking, CallbackInfo ci) {
