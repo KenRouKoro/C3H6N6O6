@@ -2,6 +2,7 @@ package cn.korostudio.c3h6n6o6.thread;
 
 import cn.korostudio.c3h6n6o6.C3H6N6O6;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -55,6 +56,7 @@ public class CalculationController {
      * MC服务器对象
      */
     @Getter
+    @Setter
     protected static MinecraftServer server;
 
     /**
@@ -82,11 +84,10 @@ public class CalculationController {
 
         if (phaser != null) {
             log.warn("多次Tick Start?什么鬼！");
-            log.info("Server 参数状态:"+server);
+            log.info("Server 参数状态:" + server);
             return;
-        }else if(! Client.get()){
-            CalculationController.server = server;
         }
+        CalculationController.server = server;
         tickStart = System.nanoTime();
         Ticking.set(true);
         phaser = new Phaser();
