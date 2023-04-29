@@ -36,22 +36,8 @@ public class CheckedThreadLocalRandomMixin extends LocalRandom {
     @Override
     public int next(int bits) {
         Thread owner = this.owner != null ? this.owner.get() : null;
-        if (owner != null && (CalculationController.getServer().isOnThread() ? owner : Thread.currentThread()) != owner)
+        if (owner != null && (CalculationController.getServer() != null && CalculationController.getServer().isOnThread() ? owner : Thread.currentThread()) != owner)
             throw new ConcurrentModificationException();
         return super.next(bits);
     }
-
-    /*
-    @Redirect(method = "method_43156", at = @At(value = "INVOKE", target = "Ljava/lang/Thread;currentThread()Ljava/lang/Thread;"))
-    private Thread fixSetSeedThread() {
-        Thread th = this.owner != null ? this.owner.get() : null;
-        return CalculationController.getServer().isOnThread() ? th : Thread.currentThread();
-    }
-    @Redirect(method = "method_43156", at = @At(value = "INVOKE", target = "Ljava/lang/Thread;currentThread()Ljava/lang/Thread;"))
-    private Thread fixNextThread() {
-        Thread th = this.owner != null ? this.owner.get() : null;
-        return CalculationController.getServer().isOnThread() ? th : Thread.currentThread();
-    }
-    */
-
 }

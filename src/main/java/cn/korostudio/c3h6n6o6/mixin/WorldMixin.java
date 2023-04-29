@@ -1,20 +1,30 @@
 package cn.korostudio.c3h6n6o6.mixin;
 
 import cn.korostudio.c3h6n6o6.thread.CalculationController;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.chunk.BlockEntityTickInvoker;
+import net.minecraft.world.chunk.*;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 /**
  * World.class ,吾进来了~！
  */
 @Mixin(World.class)
 public class WorldMixin {
+    @Shadow public Chunk getChunk(int chunkX, int chunkZ, ChunkStatus leastStatus, boolean create) { return null; }
+
     /**
      * 拦截方块实体Tick
      * @param blockEntityTickInvoker 方块实体对象，嘿嘿嘿......
@@ -47,4 +57,20 @@ public class WorldMixin {
         return this.thread;
     }
 
+    @Redirect(method = "getChunk(II)Lnet/minecraft/world/chunk/WorldChunk;", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;getChunk(IILnet/minecraft/world/chunk/ChunkStatus;)Lnet/minecraft/world/chunk/Chunk;"))
+    public Chunk fixReadOnlyChunkCannotCast(World instance, int i, int j, ChunkStatus chunkStatus) {
+        Chunk c = instance.getChunk(i, j, ChunkStatus.FULL, true);
+        if (c instanceof ReadOnlyChunk) return ((ReadOnlyChunk) c).getWrappedChunk();
+        return c;
+    }
+
+    @Inject(method = "getFluidState", at = @At("HEAD"), cancellable = true)
+    public void fixNullBlockPosFluidState(BlockPos pos, CallbackInfoReturnable<FluidState> cir) {
+        if (pos == null) cir.setReturnValue(Fluids.EMPTY.getDefaultState());
+    }
+
+    @Inject(method = "getBlockState", at = @At("HEAD"), cancellable = true)
+    public void fixNullBlockPosBlockState(BlockPos pos, CallbackInfoReturnable<BlockState> cir) {
+        if (pos == null) cir.setReturnValue(Blocks.VOID_AIR.getDefaultState());
+    }
 }

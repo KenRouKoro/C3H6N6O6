@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.chunk.BlockEntityTickInvoker;
@@ -141,13 +142,13 @@ public class CalculationController {
                     log.warn("黑索金捕捉到在实体Tick:" + Thread.currentThread().getName() + "有线程安全报错。");
                     LogErrorUtil(e);
                 }
-            } catch (Exception e){
+            }catch (Exception e){
                 if(Setting.getBool("logEntityException",true)) {
                     String eMessage = e.getMessage();
                     log.error("黑索金捕捉到在实体Tick:" + Thread.currentThread().getName() + " 抛出异常:" + e.getClass().getName() + ":" + eMessage + "\n");
                     LogErrorUtil(e);
                 }
-            } finally {
+            }finally{
                 phaser.arriveAndDeregister();
             }
         });
@@ -162,6 +163,7 @@ public class CalculationController {
             blockEntityTick.tick();
             return;
         }
+
         //检查是否为容器类，容器类直接tick，不直接tick会出问题，大概是没修改ServerChunkManger的并发限制导致的，但要与C2ME兼容就改不了那里（C2ME是从Mixin又做了一次并发限制，明明已经改造的可以并发了，淦哦），QAQ
         //不过大多数能造成卡顿的Mod的实体类也不是容器类（例如线缆那种），所以影响还是不太大，虽然还是很奇怪就是了（（（
         //if(blockEntityTick instanceof Inventory){
