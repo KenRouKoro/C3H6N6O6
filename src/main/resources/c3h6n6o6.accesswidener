@@ -1,8 +1,10 @@
-accessWidener	v1	named
-accessible  field net/minecraft/server/world/ServerChunkManager mainThreadExecutor Lnet/minecraft/server/world/ServerChunkManager$MainThreadExecutor;
-accessible  field net/minecraft/server/world/ThreadedAnvilChunkStorage pointOfInterestStorage Lnet/minecraft/world/poi/PointOfInterestStorage;
-accessible  field net/minecraft/server/world/ThreadedAnvilChunkStorage structureManager Lnet/minecraft/structure/StructureManager;
-accessible  method net/minecraft/server/world/ServerWorld processBlockEvent (Lnet/minecraft/server/world/BlockEvent;)Z
-accessible method net/minecraft/server/world/ServerChunkManager getChunkHolder (J)Lnet/minecraft/server/world/ChunkHolder;
-accessible  method net/minecraft/server/world/ServerChunkManager$MainThreadExecutor runTask ()Z
-accessible  class net/minecraft/network/NetworkState$PacketHandler
+accessWidener v1  named
+accessible field  net/minecraft/server/world/ServerChunkManager                                  mainThreadExecutor       Lnet/minecraft/server/world/ServerChunkManager$MainThreadExecutor;
+accessible field  net/minecraft/server/world/ThreadedAnvilChunkStorage                           pointOfInterestStorage   Lnet/minecraft/world/poi/PointOfInterestStorage;
+accessible field  net/minecraft/server/world/ThreadedAnvilChunkStorage                           structureTemplateManager Lnet/minecraft/structure/StructureTemplateManager;
+accessible method net/minecraft/server/world/ServerWorld                                         processBlockEvent        (Lnet/minecraft/server/world/BlockEvent;)Z
+accessible method net/minecraft/server/world/ServerChunkManager                                  getChunkHolder           (J)Lnet/minecraft/server/world/ChunkHolder;
+accessible method net/minecraft/server/world/ServerChunkManager$MainThreadExecutor               runTask                  ()Z
+accessible method net/minecraft/util/collection/DefaultedList                                    <init>                   (Ljava/util/List;Ljava/lang/Object;)V
+accessible class  net/minecraft/network/NetworkState$PacketHandler
+accessible class  net/minecraft/server/world/ChunkTicketManager$DistanceFromNearestPlayerTracker

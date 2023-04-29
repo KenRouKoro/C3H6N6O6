@@ -3,34 +3,36 @@ package cn.korostudio.c3h6n6o6.mixin;
 import cn.korostudio.c3h6n6o6.fastutil.ConcurrentCollections;
 import cn.korostudio.c3h6n6o6.thread.CalculationController;
 import cn.korostudio.c3h6n6o6.thread.ServerUtil;
-import com.mojang.datafixers.DataFixer;
 import it.unimi.dsi.fastutil.objects.ObjectLinkedOpenHashSet;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.WorldGenerationProgressListener;
 import net.minecraft.server.world.BlockEvent;
-import net.minecraft.server.world.ServerChunkManager;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.dimension.DimensionOptions;
+import net.minecraft.world.event.GameEvent;
+import net.minecraft.world.level.ServerWorldProperties;
+import net.minecraft.world.level.storage.LevelStorage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Set;
+import java.util.List;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.BooleanSupplier;
 import java.util.function.Predicate;
-import java.util.function.Supplier;
 
 /**
  * 被撅的最狠的一个类，谁叫MJ优化差！
@@ -40,7 +42,24 @@ public abstract class ServerWorldMixin  {
     /**
      * 缓存
      */
-    ConcurrentLinkedDeque<BlockEvent> syncedBlockEventCLinkedQueue = new ConcurrentLinkedDeque<BlockEvent>();
+    ConcurrentLinkedDeque<BlockEvent> syncedBlockEventCLinkedQueue = new ConcurrentLinkedDeque<>();
+    @Shadow private List<GameEvent.Message> queuedEvents;
+    @Shadow protected abstract void processEvents(List<GameEvent.Message> events);
+
+    @Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/storage/LevelStorage$Session;Lnet/minecraft/world/level/ServerWorldProperties;Lnet/minecraft/util/registry/RegistryKey;Lnet/minecraft/world/dimension/DimensionOptions;Lnet/minecraft/server/WorldGenerationProgressListener;ZJLjava/util/List;Z)V")
+    public void overrideConstructorAssigners(MinecraftServer server, Executor workerExecutor, LevelStorage.Session session, ServerWorldProperties properties, RegistryKey worldKey, DimensionOptions dimensionOptions, WorldGenerationProgressListener worldGenerationProgressListener, boolean debugWorld, long seed, List spawners, boolean shouldTickTime, CallbackInfo ci) {
+        this.queuedEvents = ConcurrentCollections.newLinkedList();
+    }
+
+    @Redirect(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/world/ServerWorld;processEventQueue()V"))
+    private void overwriteProcessEventQueue(ServerWorld instance) {
+        if (!this.queuedEvents.isEmpty()) {
+            List<GameEvent.Message> list = this.queuedEvents;
+            this.queuedEvents = ConcurrentCollections.newLinkedList();
+            this.processEvents(list);
+        }
+    }
+
 
     /**
      * 拦截实体Tick
@@ -118,7 +137,7 @@ public abstract class ServerWorldMixin  {
     /**
      * 锁~~~
      */
-    private ReentrantLock lock = new ReentrantLock();
+    private final ReentrantLock lock = new ReentrantLock();
 
 
     /**

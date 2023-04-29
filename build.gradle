@@ -198,15 +198,15 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    implementation 'cn.hutool:hutool-all:5.8.1'
+    implementation 'cn.hutool:hutool-all:5.8.11'
 
-    compileOnly "appeng:appliedenergistics2:11.0.0-alpha.5"
-    modImplementation "RebornCore:RebornCore-unknown:5.2.0+local"
-    modImplementation "TechReborn:TechReborn-unknown:5.2.0+local"
-    compileOnly "com.simibubi.create:create-fabric-1.18.2:0.5.0c"
-    compileOnly "dev.technici4n:Modern-Dynamics:local"
-    modImplementation "com.ishland.c2me:c2me-fixes-worldgen-threading-issues:0.2.0+alpha.8.78"
-    modImplementation "aztech:Modern-Industrialization:local"
+    //compileOnly "appeng:appliedenergistics2:11.0.0-alpha.5"
+    //modImplementation "RebornCore:RebornCore-unknown:5.4.0+local"
+    //modImplementation "TechReborn:TechReborn-unknown:5.4.0+local"
+    //compileOnly "com.simibubi.create:create-fabric-1.18.2:0.5.0c"
+    //compileOnly "dev.technici4n:Modern-Dynamics:local"
+    modImplementation "com.ishland.c2me:c2me-fixes-worldgen-threading-issues:0.2.0+alpha.9.9"
+    //modImplementation "aztech:Modern-Industrialization:local"
 
 }
 
